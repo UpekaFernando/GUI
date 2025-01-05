@@ -1,0 +1,56 @@
+﻿<Window x:Class="ShopManagement.UserDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="User Dashboard" Height="600" Width="800">
+    <Grid>
+        <!-- Navigation Menu -->
+        <StackPanel Orientation="Vertical" Width="200" Background="#EEEEEE" HorizontalAlignment="Left">
+            <TextBlock Text="Navigation Menu" FontWeight="Bold" FontSize="16" Margin="10" />
+            <Button Content="Home" Margin="10" />
+            <Button Content="Nearby Shops" Margin="10" />
+            <Button Content="Offers/Discounts" Margin="10" />
+            <Button Content="Favorites" Margin="10" />
+            <Button Content="Profile" Margin="10" />
+            <Button Content="Support/Help" Margin="10" />
+        </StackPanel>
+
+        <!-- Main Content Area -->
+        <Grid Margin="200,0,0,0">
+            <!-- Welcome Message -->
+            <TextBlock Text="Welcome, [User Name]! Explore shops around the campus." FontSize="18" FontWeight="Bold" Margin="20" />
+
+            <!-- Search Bar -->
+            <TextBox Margin="20,50,20,0" VerticalAlignment="Top" Height="30" Padding="5" 
+                     Foreground="Gray" Text="Search for a shop or product..." 
+                     GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" />
+
+            <!-- Nearby Shops Section -->
+            <StackPanel Orientation="Vertical" Margin="20,100,20,0">
+                <TextBlock Text="Nearby Shops" FontSize="16" FontWeight="Bold" />
+                <ListBox Height="150" Margin="0,10,0,0">
+                    <ListBoxItem Content="Restaurant: The Food Hub" />
+                    <ListBoxItem Content="Stationery: Campus Supplies" />
+                    <ListBoxItem Content="Grocery: Fresh Mart" />
+                </ListBox>
+            </StackPanel>
+
+            <!-- Special Offers Section -->
+            <StackPanel Orientation="Vertical" Margin="20,300,20,0">
+                <TextBlock Text="Special Offers" FontSize="16" FontWeight="Bold" />
+                <ListBox Height="150" Margin="0,10,0,0">
+                    <ListBoxItem Content="20% off at The Food Hub" />
+                    <ListBoxItem Content="Buy 1 Get 1 Free at Campus Supplies" />
+                    <ListBoxItem Content="10% off on groceries at Fresh Mart" />
+                </ListBox>
+            </StackPanel>
+        </Grid>
+
+        <!-- Order History Section (Initially Hidden) -->
+        <Border Name="OrderHistoryBorder" Visibility="Collapsed" Background="#FFF8DC" Margin="200,0,0,0">
+            <StackPanel Margin="10">
+                <TextBlock Text="Order History" FontSize="16" FontWeight="Bold" />
+                <!-- Add Order History Content Here -->
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
