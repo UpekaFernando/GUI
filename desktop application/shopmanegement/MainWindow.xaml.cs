@@ -15,15 +15,27 @@ namespace ShopManagement
             string email = txtUserEmail.Text;
             string password = txtUserPassword.Password;
 
-            // Simple validation logic (replace with actual implementation)
+            // Validate input
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Please enter both email and password.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
-            MessageBox.Show($"User login successful for {email}!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            // Check credentials (replace with actual authentication logic)
+            if (email == "user" && password == "user123")
+            {
+                // Redirect to the User Dashboard
+                UserDashboard dashboard = new UserDashboard();
+                dashboard.Show();
+                this.Close(); // Close the current login window
+            }
+            else
+            {
+                MessageBox.Show("Invalid email or password. Please try again.", "Login Failed", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
+
 
         // Shopkeeper Login Button Click Event
         private void btnShopLogin_Click(object sender, RoutedEventArgs e)
@@ -62,6 +74,7 @@ namespace ShopManagement
                 MessageBox.Show("Passwords do not match.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
+           
 
             MessageBox.Show($"Registration successful for {name}!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
         }

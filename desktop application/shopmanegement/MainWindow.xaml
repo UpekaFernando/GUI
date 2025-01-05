@@ -8,7 +8,7 @@
             <!-- User Login Tab -->
             <TabItem Header="User Login">
                 <Grid Margin="10">
-                    <TextBlock Text="Email/Phone:" VerticalAlignment="Top" Margin="10" />
+                    <TextBlock Text="Email:" VerticalAlignment="Top" Margin="10" />
                     <TextBox x:Name="txtUserEmail" VerticalAlignment="Top" Margin="10,30,10,0" Height="25" />
 
                     <TextBlock Text="Password:" VerticalAlignment="Top" Margin="10,70,10,0" />
@@ -19,7 +19,7 @@
                         <Button x:Name="btnForgotPassword" Content="Forgot Password?" Margin="20,0,0,0" />
                     </StackPanel>
 
-                    <Button x:Name="btnUserLogin" Content="Login" VerticalAlignment="Top" Margin="10,180,10,0" Height="30" />
+                    <Button x:Name="btnUserLogin" Content="Login" VerticalAlignment="Top" Margin="10,180,10,0" Height="30" Click="btnUserLogin_Click"/>
                 </Grid>
             </TabItem>
 
