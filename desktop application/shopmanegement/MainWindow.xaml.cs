@@ -30,6 +30,13 @@ namespace ShopManagement
                 dashboard.Show();
                 this.Close(); // Close the current login window
             }
+            if (email == "shop" && password == "shop123")
+            {
+                // Redirect to the User Dashboard
+                ShopkeeperDashboard dashboard = new ShopkeeperDashboard();
+                dashboard.Show();
+                this.Close(); // Close the current login window
+            }
             else
             {
                 MessageBox.Show("Invalid email or password. Please try again.", "Login Failed", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -50,6 +57,7 @@ namespace ShopManagement
                 MessageBox.Show("Please enter all details.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
+
 
             MessageBox.Show($"Shopkeeper login successful for shop {shopName}!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
         }

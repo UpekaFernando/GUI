@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|d:\\gui\\gui\\desktop application\\shopmanegement\\shopkeeperdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|solutionrelative:shopkeeperdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|D:\\GUI\\GUI\\desktop application\\shopmanegement\\userdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|solutionrelative:userdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|d:\\gui\\gui\\desktop application\\shopmanegement\\shopkeeperdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|D:\\GUI\\GUI\\desktop application\\shopmanegement\\shopkeeperdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|solutionrelative:shopkeeperdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|d:\\gui\\gui\\desktop application\\shopmanegement\\userdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|solutionrelative:userdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|D:\\GUI\\GUI\\desktop application\\shopmanegement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|d:\\gui\\gui\\desktop application\\shopmanegement\\shopkeeperdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|solutionrelative:shopkeeperdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|D:\\GUI\\GUI\\desktop application\\shopmanegement\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|D:\\GUI\\GUI\\desktop application\\shopmanegement\\userdashboard.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|solutionrelative:userdashboard.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|D:\\GUI\\GUI\\desktop application\\shopmanegement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,15 +42,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "shopkeeperdashboard.xaml.cs",
-              "DocumentMoniker": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\shopkeeperdashboard.xaml.cs",
-              "RelativeDocumentMoniker": "shopkeeperdashboard.xaml.cs",
-              "ToolTip": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\shopkeeperdashboard.xaml.cs",
-              "RelativeToolTip": "shopkeeperdashboard.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "UserDashboard.xaml.cs",
+              "DocumentMoniker": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\UserDashboard.xaml.cs",
+              "RelativeDocumentMoniker": "UserDashboard.xaml.cs",
+              "ToolTip": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\UserDashboard.xaml.cs",
+              "RelativeToolTip": "UserDashboard.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T19:51:40.214Z",
+              "WhenOpened": "2025-01-04T14:26:17.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowCMAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T03:44:29.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserDashboard.xaml",
+              "DocumentMoniker": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\UserDashboard.xaml",
+              "RelativeDocumentMoniker": "UserDashboard.xaml",
+              "ToolTip": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\UserDashboard.xaml",
+              "RelativeToolTip": "UserDashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-04T14:11:05.371Z",
               "EditorCaption": ""
             },
             {
@@ -67,32 +92,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserDashboard.xaml.cs",
-              "DocumentMoniker": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\UserDashboard.xaml.cs",
-              "RelativeDocumentMoniker": "UserDashboard.xaml.cs",
-              "ToolTip": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\UserDashboard.xaml.cs",
-              "RelativeToolTip": "UserDashboard.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T14:26:17.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserDashboard.xaml",
-              "DocumentMoniker": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\UserDashboard.xaml",
-              "RelativeDocumentMoniker": "UserDashboard.xaml",
-              "ToolTip": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\UserDashboard.xaml",
-              "RelativeToolTip": "UserDashboard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-04T14:11:05.371Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "shopkeeperdashboard.xaml.cs",
+              "DocumentMoniker": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\shopkeeperdashboard.xaml.cs",
+              "RelativeDocumentMoniker": "shopkeeperdashboard.xaml.cs",
+              "ToolTip": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\shopkeeperdashboard.xaml.cs",
+              "RelativeToolTip": "shopkeeperdashboard.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T19:51:40.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -100,19 +113,6 @@
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-12-30T03:44:29.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAgwCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T03:44:29.72Z",
               "EditorCaption": ""
             }
           ]
