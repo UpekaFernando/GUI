@@ -27,10 +27,6 @@
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:shopmanagementsytem2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GUI\\GUI\\shopManagementsytem2\\Migrations\\20250113133759_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250113133759_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|d:\\gui\\gui\\shopmanagementsytem2\\userdashboard.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:userdashboard.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
@@ -61,6 +57,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|d:\\gui\\gui\\shopmanagementsytem2\\shopkeeperdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:shopkeeperdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|d:\\gui\\gui\\shopmanagementsytem2\\migrations\\20250113133759_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:migrations\\20250113133759_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -87,15 +87,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "shopManagementsytem2",
+              "Title": "shopManagementsytem2.csproj",
               "DocumentMoniker": "D:\\GUI\\GUI\\shopManagementsytem2\\shopManagementsytem2.csproj",
               "RelativeDocumentMoniker": "shopManagementsytem2.csproj",
               "ToolTip": "D:\\GUI\\GUI\\shopManagementsytem2\\shopManagementsytem2.csproj",
               "RelativeToolTip": "shopManagementsytem2.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-13T13:14:06.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:14:06.621Z"
             },
             {
               "$type": "Document",
@@ -107,8 +106,7 @@
               "RelativeToolTip": "Menu.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAIwBUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T13:23:52.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:23:52.875Z"
             },
             {
               "$type": "Document",
@@ -120,12 +118,11 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAIMAAAAAAAAAAAAlwJMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T12:59:48.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T12:59:48.306Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "20250113133759_initial.cs",
               "DocumentMoniker": "D:\\GUI\\GUI\\shopManagementsytem2\\Migrations\\20250113133759_initial.cs",
               "RelativeDocumentMoniker": "Migrations\\20250113133759_initial.cs",
@@ -133,24 +130,22 @@
               "RelativeToolTip": "Migrations\\20250113133759_initial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T13:37:59.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:37:59.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "ViewMenu.xaml",
               "DocumentMoniker": "D:\\GUI\\GUI\\shopManagementsytem2\\ViewMenu.xaml",
               "RelativeDocumentMoniker": "ViewMenu.xaml",
               "ToolTip": "D:\\GUI\\GUI\\shopManagementsytem2\\ViewMenu.xaml",
               "RelativeToolTip": "ViewMenu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T13:54:22.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:54:22.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "AddMenu.xaml.cs",
               "DocumentMoniker": "D:\\GUI\\GUI\\shopManagementsytem2\\AddMenu.xaml.cs",
               "RelativeDocumentMoniker": "AddMenu.xaml.cs",
@@ -158,24 +153,22 @@
               "RelativeToolTip": "AddMenu.xaml.cs",
               "ViewState": "AgIAAGIAAAAAAAAAAAAqwH0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T14:07:48.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T14:07:48.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "AdminWindow.xaml",
               "DocumentMoniker": "D:\\GUI\\GUI\\shopManagementsytem2\\AdminWindow.xaml",
               "RelativeDocumentMoniker": "AdminWindow.xaml",
               "ToolTip": "D:\\GUI\\GUI\\shopManagementsytem2\\AdminWindow.xaml",
               "RelativeToolTip": "AdminWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T17:51:01.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T17:51:01.958Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "UserDashboard.xaml.cs",
               "DocumentMoniker": "D:\\GUI\\GUI\\shopManagementsytem2\\UserDashboard.xaml.cs",
               "RelativeDocumentMoniker": "UserDashboard.xaml.cs",
@@ -183,8 +176,7 @@
               "RelativeToolTip": "UserDashboard.xaml.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAApwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T13:11:18.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:11:18.712Z"
             },
             {
               "$type": "Document",
@@ -195,12 +187,11 @@
               "ToolTip": "D:\\GUI\\GUI\\shopManagementsytem2\\UserDashboard.xaml",
               "RelativeToolTip": "UserDashboard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T13:10:46.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:10:46.558Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "AdminWindow.xaml.cs",
               "DocumentMoniker": "D:\\GUI\\GUI\\shopManagementsytem2\\AdminWindow.xaml.cs",
               "RelativeDocumentMoniker": "AdminWindow.xaml.cs",
@@ -208,8 +199,7 @@
               "RelativeToolTip": "AdminWindow.xaml.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAUwB8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:00:57.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T18:00:57.061Z"
             },
             {
               "$type": "Document",
@@ -224,10 +214,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MenuDb.cs",
@@ -237,36 +223,33 @@
               "RelativeToolTip": "MenuDb.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T13:16:16.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:16:16.015Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "AddMenu.xaml",
               "DocumentMoniker": "D:\\GUI\\GUI\\shopManagementsytem2\\AddMenu.xaml",
               "RelativeDocumentMoniker": "AddMenu.xaml",
               "ToolTip": "D:\\GUI\\GUI\\shopManagementsytem2\\AddMenu.xaml",
               "RelativeToolTip": "AddMenu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T13:58:24.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:58:24.454Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "ShopkeeperDashboard.xaml",
               "DocumentMoniker": "D:\\GUI\\GUI\\shopManagementsytem2\\ShopkeeperDashboard.xaml",
               "RelativeDocumentMoniker": "ShopkeeperDashboard.xaml",
               "ToolTip": "D:\\GUI\\GUI\\shopManagementsytem2\\ShopkeeperDashboard.xaml",
               "RelativeToolTip": "ShopkeeperDashboard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T13:07:04.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:07:04.751Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "ShopkeeperDashboard.xaml.cs",
               "DocumentMoniker": "D:\\GUI\\GUI\\shopManagementsytem2\\ShopkeeperDashboard.xaml.cs",
               "RelativeDocumentMoniker": "ShopkeeperDashboard.xaml.cs",
@@ -274,8 +257,11 @@
               "RelativeToolTip": "ShopkeeperDashboard.xaml.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAcwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T13:09:16.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:09:16.786Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             }
           ]
         }
