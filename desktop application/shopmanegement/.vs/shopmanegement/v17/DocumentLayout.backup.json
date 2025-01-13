@@ -1,7 +1,14 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|shopmanegement||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77A3CFA3-AF59-41BA-80C3-A9CEAFF8D3AE}|shopmanegement.csproj|d:\\gui\\gui\\desktop application\\shopmanegement\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +16,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "shopmanegement",
+              "DocumentMoniker": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\shopmanegement.csproj",
+              "RelativeDocumentMoniker": "shopmanegement.csproj",
+              "ToolTip": "D:\\GUI\\GUI\\desktop application\\shopmanegement\\shopmanegement.csproj",
+              "RelativeToolTip": "shopmanegement.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-13T07:36:25.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"

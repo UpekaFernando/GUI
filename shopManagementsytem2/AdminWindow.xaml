@@ -1,0 +1,23 @@
+﻿<Window x:Class="shopManagementsytem2.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:shopManagementsytem2"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="550" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Manage Users and Shopkeepers" FontSize="24" FontWeight="Bold" Margin="0,0,0,20" />
+
+            <TextBlock Text="Users" FontSize="18" FontWeight="Bold" Margin="0,0,0,10" />
+            <ListBox x:Name="UserListBox" DisplayMemberPath="Email" Height="136" Margin="0,0,0,20" />
+
+            <TextBlock Text="Shopkeepers" FontSize="18" FontWeight="Bold" Margin="0,0,0,10" />
+            <ListBox x:Name="ShopkeeperListBox" DisplayMemberPath="Email" Height="150" Margin="0,0,0,20" />
+
+            <Button Content="Delete Selected User" Width="200" Margin="0,0,0,10" Click="DeleteUserButton_Click" />
+            <Button Content="Delete Selected Shopkeeper" Width="200" Click="DeleteShopkeeperButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

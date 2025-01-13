@@ -1,0 +1,28 @@
+﻿<Window x:Class="shopManagementsytem2.ShopkeeperDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:shopManagementsytem2"
+        mc:Ignorable="d"
+        Title="ShopkeeperDashboard" Height="450" Width="800">
+    <Grid>
+        <!-- Dock Panel for Navigation and Content -->
+        <DockPanel>
+            <!-- Left Navigation Panel -->
+            <StackPanel DockPanel.Dock="Left" Width="250" Background="LightGray">
+                <Button Content="Home" Name="btnHome" Width="230" Margin="10" Click="btnHome_Click"/>
+                <Button Content="Add Menu" Name="btnManageListings" Width="230" Margin="10" Click="btnManageListings_Click"/>
+                <Button Content="Orders" Name="btnOrders" Width="230" Margin="10" Click="btnOrders_Click"/>
+                <Button Content="Sales Report" Name="btnSalesReport" Width="230" Margin="10" Click="btnSalesReport_Click"/>
+                <Button Content="Customer Feedback" Name="btnCustomerFeedback" Width="230" Margin="10" Click="btnCustomerFeedback_Click"/>
+                <Button Content="Settings" Name="btnSettings" Width="230" Margin="10" Click="btnSettings_Click"/>
+            </StackPanel>
+
+            <!-- Content Area -->
+            <Grid DockPanel.Dock="Right" Name="contentArea">
+                <TextBlock x:Name="textBlock" Text="Welcome to your Dashboard!" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>
