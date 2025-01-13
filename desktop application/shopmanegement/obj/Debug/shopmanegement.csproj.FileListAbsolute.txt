@@ -16,3 +16,5 @@ D:\GUI\GUI\desktop application\shopmanegement\obj\Debug\UserDashboard.baml
 D:\GUI\GUI\desktop application\shopmanegement\obj\Debug\UserDashboard.g.cs
 D:\GUI\GUI\desktop application\shopmanegement\obj\Debug\shopkeeperdashboard.baml
 D:\GUI\GUI\desktop application\shopmanegement\obj\Debug\shopkeeperdashboard.g.cs
+D:\GUI\GUI\desktop application\shopmanegement\obj\Debug\SelectMenu.g.cs
+D:\GUI\GUI\desktop application\shopmanegement\obj\Debug\shopmanegement_MarkupCompile.lref

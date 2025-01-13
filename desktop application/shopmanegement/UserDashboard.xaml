@@ -25,38 +25,52 @@
                             <ListBoxItem Content="Grocery: Fresh Mart" />
                         </ListBox>
                     </StackPanel>
-
-                    <!-- Special Offers Section -->
-                    <StackPanel Orientation="Vertical" Margin="20,300,20,0">
-                        <TextBlock Text="Special Offers" FontSize="16" FontWeight="Bold" />
-                        <ListBox Height="150" Margin="0,10,0,0">
-                            <ListBoxItem Content="20% off at The Food Hub" />
-                            <ListBoxItem Content="Buy 1 Get 1 Free at Campus Supplies" />
-                            <ListBoxItem Content="10% off on groceries at Fresh Mart" />
-                        </ListBox>
-                    </StackPanel>
                 </Grid>
             </TabItem>
 
-            <!-- Nearby Shops Tab -->
+            <!-- Updated Nearby Shops Tab -->
             <TabItem Header="Nearby Shops">
-                <Grid>
-                    <TextBlock Text="Nearby Shops" FontSize="16" FontWeight="Bold" Margin="10" />
-                    <ListBox Margin="10,40,10,10">
-                        <TextBlock Text="Select an option:" FontSize="14" FontWeight="Bold" Margin="0,0,0,10" />
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Vertical" Margin="10">
+                        <TextBlock Text="Nearby Shops" FontSize="16" FontWeight="Bold" Margin="0,0,0,10" />
 
-                        <!-- ComboBox Dropdown -->
-                        <ComboBox Width="200" Height="30">
-                            <ComboBoxItem Content="Option 1" />
-                            <ComboBoxItem Content="Option 2" />
-                            <ComboBoxItem Content="Option 3" />
-                            <ComboBoxItem Content="Option 4" />
-                        </ComboBox>
-                        <ListBoxItem Content="Restaurant: The Food Hub" />
-                        <ListBoxItem Content="Stationery: Campus Supplies" />
-                        <ListBoxItem Content="Grocery: Fresh Mart" />
-                    </ListBox>
-                </Grid>
+                        <!-- Shop 1 -->
+                        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Margin="0,0,0,10">
+                            <StackPanel Orientation="Horizontal" Margin="10">
+                                <Image Source="D:\GUI\GUI\desktop application\shopmanegement\Images\shop no 1.jpg" 
+                                       Width="80" Height="80" Margin="0,0,10,0" />
+                                <StackPanel>
+                                    <TextBlock Text="Restaurant: The Food Hub" FontSize="14" FontWeight="Bold" />
+                                    <TextBlock Text="Enjoy delicious meals at affordable prices." FontSize="12" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- Shop 2 -->
+                        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Margin="0,0,0,10">
+                            <StackPanel Orientation="Horizontal" Margin="10">
+                                <Image Source="D:\GUI\GUI\desktop application\shopmanegement\Images\shop no 2.jpg" 
+                                       Width="80" Height="80" Margin="0,0,10,0" />
+                                <StackPanel>
+                                    <TextBlock Text="Stationery: Campus Supplies" FontSize="14" FontWeight="Bold" />
+                                    <TextBlock Text="Your one-stop shop for stationery needs." FontSize="12" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+
+                        <!-- Shop 3 -->
+                        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Margin="0,0,0,10">
+                            <StackPanel Orientation="Horizontal" Margin="10">
+                                <Image Source="D:\GUI\GUI\desktop application\shopmanegement\Images\shop no 3.jpg"
+                                       Width="80" Height="80" Margin="0,0,10,0" />
+                                <StackPanel>
+                                    <TextBlock Text="Grocery: Fresh Mart" FontSize="14" FontWeight="Bold" />
+                                    <TextBlock Text="Fresh groceries and daily essentials." FontSize="12" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </ScrollViewer>
             </TabItem>
 
             <!-- Offers/Discounts Tab -->
@@ -89,7 +103,7 @@
                     </Grid.ColumnDefinitions>
 
                     <Image Source="D:\GUI\GUI\desktop application\shopmanegement\profilepic.png" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,20,0,0"
-               ClipToBounds="True" Stretch="Uniform" Grid.Column="2" />
+                           ClipToBounds="True" Stretch="Uniform" Grid.Column="2" />
 
                     <!-- User Name -->
                     <TextBlock TextAlignment="Center" Text="User" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="84,140,0,0" Grid.Column="2" />
@@ -99,15 +113,13 @@
 
                     <!-- Top-Up Button -->
                     <Button Content="Top Up Balance" Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,220,0,0"
-                Background="#0078D7" Foreground="White" Click="TopUpButton_Click" Grid.Column="2" />
+                            Background="#0078D7" Foreground="White" Click="TopUpButton_Click" Grid.Column="2" />
 
                     <!-- Settings and Notifications Icons -->
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" Grid.Column="2"/>
                     <!-- Add profile content here -->
                 </Grid>
             </TabItem>
-
-            <!-- Support/Help Tab -->
 
             <!-- Order History Tab -->
             <TabItem Header="Order History">
