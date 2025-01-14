@@ -53,7 +53,7 @@ namespace shopManagementsytem2
 
             using (var context = new MenuDb())
             {
-                var shopkeeper = context.Shopkeepers.FirstOrDefault(s => s.ShopName == shopName && (s.Email == emailOrPhone || s.Phone == emailOrPhone) && s.Password == password);
+                var shopkeeper = context.Shopkeepers.FirstOrDefault(s => (s.Email == emailOrPhone) && s.Password == password);
                 if (shopkeeper != null)
                 {
                     MessageBox.Show("Shopkeeper login successful!");
@@ -144,5 +144,9 @@ namespace shopManagementsytem2
                 }
             }
         }
+
+       
+
+
     }
 }

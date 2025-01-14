@@ -30,6 +30,11 @@
                 <TextBox x:Name="QuantityTextBox" Width="200" />
             </StackPanel>
 
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Shop Name:" Width="100" VerticalAlignment="Center" />
+                <ComboBox x:Name="ShopNameComboBox" Width="200" DisplayMemberPath="ShopName" SelectedValuePath="ShopName" />
+            </StackPanel>
+
             <Button Content="Add Menu" Width="100" Margin="0,0,0,20" Click="AddMenuButton_Click" />
 
             <TextBlock Text="Added Menus" FontSize="18" FontWeight="Bold" Margin="0,0,0,10" />
@@ -41,6 +46,7 @@
                             <TextBlock Text="{Binding Name}" Width="150" />
                             <TextBlock Text="{Binding Price}" Width="100" />
                             <TextBlock Text="{Binding Quantity}" Width="100" />
+                            <TextBlock Text="{Binding ShopName}" Width="150" />
                             <Button Content="Update" Width="60" Margin="5,0" Click="UpdateMenuButton_Click" />
                             <Button Content="Delete" Width="60" Margin="5,0" Click="DeleteMenuButton_Click" />
                         </StackPanel>

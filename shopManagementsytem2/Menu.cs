@@ -12,6 +12,7 @@ namespace shopManagementsytem2
         public string Name { get; set; }
         public decimal Price { get; set; }
         public int Quantity { get; set; }
+        public string ShopName { get; set; }
 
     }
     public class User
@@ -28,6 +29,6 @@ namespace shopManagementsytem2
         public string ShopName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string Phone { get; set; } // Add this line
+        
     }
 }

@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:shopManagementsytem2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="561" Width="600">
-    <Grid>
+        Title="MainWindow" Height="772" Width="600">
+    <Grid Margin="0,0,0,169">
         <Grid.RowDefinitions>
-            <RowDefinition Height="350*"/>
-            <RowDefinition Height="183*"/>
-            <RowDefinition Height="12*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <!-- Tab Control for Login and Registration -->
         <TabControl Grid.RowSpan="3">
@@ -19,43 +19,42 @@
                 <Grid Margin="10">
                     <!-- User Login Section -->
                     <GroupBox Header="User Login" Margin="0,0,0,150">
-                        <Grid Margin="20,0,7,0" Height="235">
+                        <Grid Margin="20,0,7,0">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="47*"/>
-                                <RowDefinition Height="208*"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="167*"/>
-                                <ColumnDefinition Width="387*"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <TextBlock Text="Email:" VerticalAlignment="Top" Margin="10,10,10,0" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtUserEmail" VerticalAlignment="Top" Margin="10,30,10,0" Height="25" Grid.ColumnSpan="2" Grid.RowSpan="2" />
+                            <TextBox x:Name="txtUserEmail" VerticalAlignment="Top" Margin="10,30,10,0" Height="25" Grid.ColumnSpan="2" />
 
                             <TextBlock Text="Password:" VerticalAlignment="Top" Margin="10,23,10,0" Grid.ColumnSpan="2" Grid.Row="1" />
                             <PasswordBox x:Name="txtUserPassword" VerticalAlignment="Top" Margin="10,53,10,0" Height="25" Grid.ColumnSpan="2" Grid.Row="1" />
 
-                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,10,0" Grid.ColumnSpan="2" Grid.Row="1">
-                                <CheckBox x:Name="chkRememberMe" Content="Remember Me" />
-                                <Button x:Name="btnForgotPassword" Content="Forgot Password?" Margin="20,0,0,0" />
-                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,10,0" Grid.ColumnSpan="2" Grid.Row="1"/>
 
                             <Button x:Name="btnUserLogin" Content="Login" VerticalAlignment="Top" Margin="10,133,10,0" Height="30" Click="btnUserLogin_Click" Grid.ColumnSpan="2" Grid.Row="1"/>
+                            <CheckBox x:Name="chkRememberMe" Content="Remember Me" Grid.ColumnSpan="2" Margin="0,91,437,52" Grid.Row="1" />
+                            <Button x:Name="btnForgotPassword" Content="Forgot Password?" Margin="115,91,205,52" Grid.Column="1" Grid.Row="1" />
                         </Grid>
                     </GroupBox>
 
                     <!-- Shopkeeper Login Section -->
                     <GroupBox Header="Shopkeeper Login" Margin="0,249,0,-99">
-                        <Grid Margin="10">
+                        <Grid Margin="10,0,10,0" Height="439">
                             <TextBlock Text="Shop Name:" VerticalAlignment="Top" Margin="10" />
                             <TextBox x:Name="txtShopName" VerticalAlignment="Top" Margin="10,30,10,0" Height="25" />
 
-                            <TextBlock Text="Email/Phone:" VerticalAlignment="Top" Margin="10,70,10,0" />
+                            <TextBlock Text="Email:" VerticalAlignment="Top" Margin="10,70,10,0" />
                             <TextBox x:Name="txtShopEmail" VerticalAlignment="Top" Margin="10,100,10,0" Height="25" />
 
                             <TextBlock Text="Password:" VerticalAlignment="Top" Margin="10,140,10,0" />
                             <PasswordBox x:Name="txtShopPassword" VerticalAlignment="Top" Margin="10,170,10,0" Height="25" />
 
-                            <Button x:Name="btnShopLogin" Content="Login" VerticalAlignment="Top" Margin="10,210,10,0" Height="30" Click="btnShopLogin_Click"/>
+                            <Button x:Name="btnShopLogin" Content="Login" VerticalAlignment="Top" Margin="10,233,10,0" Height="30" Click="btnShopLogin_Click"/>
                         </Grid>
                     </GroupBox>
                 </Grid>
@@ -67,7 +66,7 @@
                     <TextBlock Text="Name:" VerticalAlignment="Top" Margin="10" />
                     <TextBox x:Name="txtRegName" VerticalAlignment="Top" Margin="10,30,10,0" Height="25" />
 
-                    <TextBlock Text="Email/Phone:" VerticalAlignment="Top" Margin="10,70,10,0" />
+                    <TextBlock Text="Email:" VerticalAlignment="Top" Margin="10,70,10,0" />
                     <TextBox x:Name="txtRegEmail" VerticalAlignment="Top" Margin="10,100,10,0" Height="25" />
 
                     <TextBlock Text="Password:" VerticalAlignment="Top" Margin="10,140,10,0" />
@@ -81,12 +80,12 @@
             </TabItem>
 
             <!-- Shopkeeper Registration Tab -->
-            <TabItem Header="Shopkeeper Registration">
+            <TabItem Header="Shopkeeper Registration" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
                 <Grid Margin="10">
                     <TextBlock Text="Shop Name:" VerticalAlignment="Top" Margin="10" />
                     <TextBox x:Name="txtShopRegName" VerticalAlignment="Top" Margin="10,30,10,0" Height="25" />
 
-                    <TextBlock Text="Email/Phone:" VerticalAlignment="Top" Margin="10,70,10,0" />
+                    <TextBlock Text="Email:" VerticalAlignment="Top" Margin="10,70,10,0" />
                     <TextBox x:Name="txtShopRegEmail" VerticalAlignment="Top" Margin="10,100,10,0" Height="25" />
 
                     <TextBlock Text="Password:" VerticalAlignment="Top" Margin="10,140,10,0" />
