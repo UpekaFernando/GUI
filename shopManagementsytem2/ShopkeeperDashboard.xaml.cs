@@ -19,9 +19,12 @@ namespace shopManagementsytem2
     /// </summary>
     public partial class ShopkeeperDashboard : Window
     {
-        public ShopkeeperDashboard()
+        private string shopName;
+
+        public ShopkeeperDashboard(string shopName)
         {
             InitializeComponent();
+            this.shopName = shopName;
         }
 
         // Home Button Click Event
@@ -36,7 +39,7 @@ namespace shopManagementsytem2
         {
             textBlock.Text = "Manage your product listings here!";
             // Replace this with the Manage Listings content (a UserControl or another window)
-            AddMenu addMenuWindow = new AddMenu();
+            AddMenu addMenuWindow = new AddMenu(shopName);
             addMenuWindow.Show();
         }
 

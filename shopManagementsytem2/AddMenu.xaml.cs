@@ -18,26 +18,26 @@ namespace shopManagementsytem2
     public partial class AddMenu : Window
     {
         public ObservableCollection<Menu> Menus { get; set; }
-        public ObservableCollection<Shopkeeper> Shopkeepers { get; set; }
         private Menu? selectedMenu;
+        private string shopName;
 
-        public AddMenu()
+        public AddMenu(string shopName)
         {
             InitializeComponent();
             Menus = new ObservableCollection<Menu>();
-            Shopkeepers = new ObservableCollection<Shopkeeper>();
             DataContext = this;
+            this.shopName = shopName;
+            ShopNameTextBlock.Text = shopName;
 
-            // Load existing menus and shops from the database
+            // Load existing menus from the database
             LoadMenusFromDatabase();
-            LoadShopsFromDatabase();
         }
 
         private void LoadMenusFromDatabase()
         {
             using (var context = new MenuDb())
             {
-                var menus = context.Menus.ToList();
+                var menus = context.Menus.Where(m => m.ShopName == shopName).ToList();
                 foreach (var menu in menus)
                 {
                     Menus.Add(menu);
@@ -45,34 +45,18 @@ namespace shopManagementsytem2
             }
         }
 
-        private void LoadShopsFromDatabase()
-        {
-            using (var context = new MenuDb())
-            {
-                var shops = context.Shopkeepers.ToList();
-                foreach (var shop in shops)
-                {
-                    Shopkeepers.Add(shop);
-                }
-                ShopNameComboBox.ItemsSource = Shopkeepers;
-            }
-        }
-
         private void AddMenuButton_Click(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(ProductIdTextBox.Text, out int productId) &&
-                decimal.TryParse(PriceTextBox.Text, out decimal price) &&
-                int.TryParse(QuantityTextBox.Text, out int quantity) &&
-                ShopNameComboBox.SelectedItem is Shopkeeper selectedShop)
+            if (decimal.TryParse(PriceTextBox.Text, out decimal price) &&
+                int.TryParse(QuantityTextBox.Text, out int quantity))
             {
                 if (selectedMenu != null)
                 {
                     // Update existing menu item
-                    selectedMenu.ProductId = productId;
                     selectedMenu.Name = NameTextBox.Text;
                     selectedMenu.Price = price;
                     selectedMenu.Quantity = quantity;
-                    selectedMenu.ShopName = selectedShop.ShopName;
+                    selectedMenu.ShopName = shopName;
 
                     using (var context = new MenuDb())
                     {
@@ -84,14 +68,17 @@ namespace shopManagementsytem2
                 }
                 else
                 {
+                    // Generate new Product ID within the shop
+                    int newProductId = Menus.Any() ? Menus.Max(m => m.ProductId) + 1 : 1;
+
                     // Add new menu item
                     var newMenu = new Menu
                     {
-                        ProductId = productId,
+                        ProductId = newProductId,
                         Name = NameTextBox.Text,
                         Price = price,
                         Quantity = quantity,
-                        ShopName = selectedShop.ShopName
+                        ShopName = shopName
                     };
 
                     Menus.Add(newMenu);
@@ -104,15 +91,13 @@ namespace shopManagementsytem2
                 }
 
                 // Clear input fields
-                ProductIdTextBox.Clear();
                 NameTextBox.Clear();
                 PriceTextBox.Clear();
                 QuantityTextBox.Clear();
-                ShopNameComboBox.SelectedIndex = -1;
             }
             else
             {
-                MessageBox.Show("Please enter valid values for Product ID, Price, Quantity, and select a Shop.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Please enter valid values for Price and Quantity.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -121,11 +106,9 @@ namespace shopManagementsytem2
             if (sender is Button button && button.DataContext is Menu menu)
             {
                 // Populate input fields with selected menu item
-                ProductIdTextBox.Text = menu.ProductId.ToString();
                 NameTextBox.Text = menu.Name;
                 PriceTextBox.Text = menu.Price.ToString();
                 QuantityTextBox.Text = menu.Quantity.ToString();
-                ShopNameComboBox.SelectedValue = menu.ShopName;
                 selectedMenu = menu;
             }
         }

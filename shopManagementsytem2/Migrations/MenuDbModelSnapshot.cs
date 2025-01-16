@@ -19,8 +19,10 @@ namespace shopManagementsytem2.Migrations
 
             modelBuilder.Entity("shopManagementsytem2.Menu", b =>
                 {
+                    b.Property<string>("ShopName")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("ProductId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
@@ -33,11 +35,7 @@ namespace shopManagementsytem2.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("ShopName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("ProductId");
+                    b.HasKey("ShopName", "ProductId");
 
                     b.ToTable("Menus");
                 });
