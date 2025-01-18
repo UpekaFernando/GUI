@@ -5,21 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:shopManagementsytem2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="772" Width="600">
-    <Grid Margin="0,0,0,169">
+        Title="MainWindow" Height="660" Width="600">
+    <Grid Margin="0,0,0,32">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
         </Grid.RowDefinitions>
         <!-- Tab Control for Login and Registration -->
-        <TabControl Grid.RowSpan="3">
+        <TabControl Grid.RowSpan="3" Margin="0,0,0,-40">
             <!-- Login Tab -->
             <TabItem Header="Login">
                 <Grid Margin="10">
                     <!-- User Login Section -->
-                    <GroupBox Header="User Login" Margin="0,0,0,150">
-                        <Grid Margin="20,0,7,0">
+                    <GroupBox Header="User Login" Margin="0,0,0,300">
+                        <Grid Margin="20,0,0,0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
@@ -37,14 +37,12 @@
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,10,0" Grid.ColumnSpan="2" Grid.Row="1"/>
 
                             <Button x:Name="btnUserLogin" Content="Login" VerticalAlignment="Top" Margin="10,133,10,0" Height="30" Click="btnUserLogin_Click" Grid.ColumnSpan="2" Grid.Row="1"/>
-                            <CheckBox x:Name="chkRememberMe" Content="Remember Me" Grid.ColumnSpan="2" Margin="0,91,437,52" Grid.Row="1" />
-                            <Button x:Name="btnForgotPassword" Content="Forgot Password?" Margin="115,91,205,52" Grid.Column="1" Grid.Row="1" />
                         </Grid>
                     </GroupBox>
 
                     <!-- Shopkeeper Login Section -->
-                    <GroupBox Header="Shopkeeper Login" Margin="0,249,0,-99">
-                        <Grid Margin="10,0,10,0" Height="439">
+                    <GroupBox Header="Shopkeeper Login" Margin="0,300,0,0">
+                        <Grid Margin="10,0,10,0" >
                             <TextBlock Text="Shop Name:" VerticalAlignment="Top" Margin="10" />
                             <TextBox x:Name="txtShopName" VerticalAlignment="Top" Margin="10,30,10,0" Height="25" />
 
@@ -80,7 +78,7 @@
             </TabItem>
 
             <!-- Shopkeeper Registration Tab -->
-            <TabItem Header="Shopkeeper Registration" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
+            <TabItem Header="Shopkeeper Registration" >
                 <Grid Margin="10">
                     <TextBlock Text="Shop Name:" VerticalAlignment="Top" Margin="10" />
                     <TextBox x:Name="txtShopRegName" VerticalAlignment="Top" Margin="10,30,10,0" Height="25" />

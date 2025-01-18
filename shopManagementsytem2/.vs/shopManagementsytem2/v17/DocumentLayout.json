@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\addmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:addmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\addmenu.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:addmenu.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\viewmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:viewmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\userdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:userdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -19,52 +51,16 @@
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:userdashboard.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\viewmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:viewmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250118045325_updated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250118045325_updated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\menudb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:menudb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\addmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:addmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\addmenu.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:addmenu.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\migrations\\20250115161634_addcompositekeytomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:migrations\\20250115161634_addcompositekeytomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\viewmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:viewmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GUI\\GUI\\shopManagementsytem2\\Migrations\\20250114114343_AddUserAndShopkeeperEntities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -88,6 +84,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\migrations\\20250115150101_initial2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:migrations\\20250115150101_initial2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\user\\onedrive\\desktop\\cloned\\gui\\shopmanagementsytem2\\migrations\\20250118045325_updated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:migrations\\20250118045325_updated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,7 +97,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -120,97 +120,16 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20250115161634_AddCompositeKeyToMenu.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250115161634_AddCompositeKeyToMenu.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250115161634_AddCompositeKeyToMenu.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250115161634_AddCompositeKeyToMenu.cs",
-              "RelativeToolTip": "Migrations\\20250115161634_AddCompositeKeyToMenu.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T16:16:34.205Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ShopkeeperDashboard.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\ShopkeeperDashboard.xaml.cs",
-              "RelativeDocumentMoniker": "ShopkeeperDashboard.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\ShopkeeperDashboard.xaml.cs",
-              "RelativeToolTip": "ShopkeeperDashboard.xaml.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAwwGMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T13:09:16.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAQwE0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T12:59:48.306Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserDashboard.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\UserDashboard.xaml.cs",
-              "RelativeDocumentMoniker": "UserDashboard.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\UserDashboard.xaml.cs",
-              "RelativeToolTip": "UserDashboard.xaml.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAUwG8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T13:11:18.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20250118045325_updated.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250118045325_updated.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250118045325_updated.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250118045325_updated.cs",
-              "RelativeToolTip": "Migrations\\20250118045325_updated.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T04:53:25.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddMenu.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AddMenu.xaml.cs",
-              "RelativeDocumentMoniker": "AddMenu.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AddMenu.xaml.cs",
-              "RelativeToolTip": "AddMenu.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T14:07:48.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AddMenu.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AddMenu.xaml",
-              "RelativeDocumentMoniker": "AddMenu.xaml",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AddMenu.xaml",
-              "RelativeToolTip": "AddMenu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T13:58:24.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "ViewMenu.xaml.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\ViewMenu.xaml.cs",
               "RelativeDocumentMoniker": "ViewMenu.xaml.cs",
@@ -223,7 +142,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AdminWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "AdminWindow.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAhwEIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:00:57.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UserDashboard.xaml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\UserDashboard.xaml",
               "RelativeDocumentMoniker": "UserDashboard.xaml",
@@ -234,39 +166,154 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-13T12:59:50.972Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddMenu.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AddMenu.xaml",
+              "RelativeDocumentMoniker": "AddMenu.xaml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AddMenu.xaml",
+              "RelativeToolTip": "AddMenu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-13T13:58:24.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAQwE0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T12:59:48.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Menu.cs",
+              "RelativeDocumentMoniker": "Menu.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Menu.cs",
+              "RelativeToolTip": "Menu.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAzwA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T13:23:52.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserDashboard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\UserDashboard.xaml.cs",
+              "RelativeDocumentMoniker": "UserDashboard.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\UserDashboard.xaml.cs",
+              "RelativeToolTip": "UserDashboard.xaml.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAUwG8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T13:11:18.712Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AddMenu.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AddMenu.xaml.cs",
+              "RelativeDocumentMoniker": "AddMenu.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AddMenu.xaml.cs",
+              "RelativeToolTip": "AddMenu.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAgwDIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T14:07:48.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "AdminWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AdminWindow.xaml",
+              "RelativeToolTip": "AdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-13T17:51:01.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250118045325_updated.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250118045325_updated.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250118045325_updated.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250118045325_updated.cs",
+              "RelativeToolTip": "Migrations\\20250118045325_updated.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T04:53:25.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ShopkeeperDashboard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\ShopkeeperDashboard.xaml.cs",
+              "RelativeDocumentMoniker": "ShopkeeperDashboard.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\ShopkeeperDashboard.xaml.cs",
+              "RelativeToolTip": "ShopkeeperDashboard.xaml.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAwwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T13:09:16.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20250115161634_AddCompositeKeyToMenu.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250115161634_AddCompositeKeyToMenu.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250115161634_AddCompositeKeyToMenu.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250115161634_AddCompositeKeyToMenu.cs",
+              "RelativeToolTip": "Migrations\\20250115161634_AddCompositeKeyToMenu.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:16:34.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ShopkeeperDashboard.xaml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\ShopkeeperDashboard.xaml",
               "RelativeDocumentMoniker": "ShopkeeperDashboard.xaml",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\ShopkeeperDashboard.xaml",
               "RelativeToolTip": "ShopkeeperDashboard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T13:07:04.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:07:04.751Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ViewMenu.xaml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\ViewMenu.xaml",
               "RelativeDocumentMoniker": "ViewMenu.xaml",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\ViewMenu.xaml",
               "RelativeToolTip": "ViewMenu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T13:54:22.483Z"
+              "WhenOpened": "2025-01-13T13:54:22.483Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "MenuDb.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\MenuDb.cs",
               "RelativeDocumentMoniker": "MenuDb.cs",
@@ -274,24 +321,11 @@
               "RelativeToolTip": "MenuDb.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAcwBIAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T13:16:16.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:16:16.015Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Menu.cs",
-              "RelativeDocumentMoniker": "Menu.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Menu.cs",
-              "RelativeToolTip": "Menu.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAYwA4AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T13:23:52.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "20250115150101_initial2.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250115150101_initial2.cs",
               "RelativeDocumentMoniker": "Migrations\\20250115150101_initial2.cs",
@@ -303,18 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T12:59:50.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "20250114115812_afterchanging1.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250114115812_afterchanging1.cs",
               "RelativeDocumentMoniker": "Migrations\\20250114115812_afterchanging1.cs",
@@ -326,30 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AdminWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AdminWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AdminWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AdminWindow.xaml.cs",
-              "RelativeToolTip": "AdminWindow.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAswB8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:00:57.061Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AdminWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AdminWindow.xaml",
-              "RelativeDocumentMoniker": "AdminWindow.xaml",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AdminWindow.xaml",
-              "RelativeToolTip": "AdminWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T17:51:01.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "20250114152520_initial.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250114152520_initial.cs",
               "RelativeDocumentMoniker": "Migrations\\20250114152520_initial.cs",
@@ -361,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "20250114152859_Newdatabase.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\Migrations\\20250114152859_Newdatabase.cs",
               "RelativeDocumentMoniker": "Migrations\\20250114152859_Newdatabase.cs",
@@ -373,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "20250114114343_AddUserAndShopkeeperEntities.cs",
               "DocumentMoniker": "D:\\GUI\\GUI\\shopManagementsytem2\\Migrations\\20250114114343_AddUserAndShopkeeperEntities.cs",
               "ToolTip": "D:\\GUI\\GUI\\shopManagementsytem2\\Migrations\\20250114114343_AddUserAndShopkeeperEntities.cs",
@@ -383,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "shopManagementsytem2.csproj",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\shopManagementsytem2.csproj",
               "RelativeDocumentMoniker": "shopManagementsytem2.csproj",
