@@ -97,7 +97,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -116,18 +116,6 @@
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ViewMenu.xaml.cs",
@@ -137,8 +125,7 @@
               "RelativeToolTip": "ViewMenu.xaml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAEAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T14:26:46.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-14T14:26:46.748Z"
             },
             {
               "$type": "Document",
@@ -150,8 +137,7 @@
               "RelativeToolTip": "AdminWindow.xaml.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAhwEIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T18:00:57.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T18:00:57.061Z"
             },
             {
               "$type": "Document",
@@ -162,8 +148,7 @@
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\UserDashboard.xaml",
               "RelativeToolTip": "UserDashboard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T13:10:46.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:10:46.558Z"
             },
             {
               "$type": "Document",
@@ -186,8 +171,7 @@
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AddMenu.xaml",
               "RelativeToolTip": "AddMenu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T13:58:24.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:58:24.454Z"
             },
             {
               "$type": "Document",
@@ -199,8 +183,7 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAQwE0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T12:59:48.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T12:59:48.306Z"
             },
             {
               "$type": "Document",
@@ -212,8 +195,7 @@
               "RelativeToolTip": "Menu.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAzwA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T13:23:52.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:23:52.875Z"
             },
             {
               "$type": "Document",
@@ -237,8 +219,7 @@
               "RelativeToolTip": "AddMenu.xaml.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAgwDIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T14:07:48.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T14:07:48.636Z"
             },
             {
               "$type": "Document",
@@ -249,8 +230,7 @@
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\AdminWindow.xaml",
               "RelativeToolTip": "AdminWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T17:51:01.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T17:51:01.958Z"
             },
             {
               "$type": "Document",
@@ -308,8 +288,7 @@
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\ViewMenu.xaml",
               "RelativeToolTip": "ViewMenu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-13T13:54:22.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T13:54:22.483Z"
             },
             {
               "$type": "Document",
@@ -392,6 +371,18 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-01-13T13:14:06.621Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }
