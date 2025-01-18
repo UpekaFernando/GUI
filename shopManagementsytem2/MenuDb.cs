@@ -16,7 +16,7 @@ namespace shopManagementsytem2
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source=D:\GUI\GUI\Database\database.db");
+            optionsBuilder.UseSqlite(@"Data Source=C:\Users\User\OneDrive\Desktop\CLONED\GUI\Database\database.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

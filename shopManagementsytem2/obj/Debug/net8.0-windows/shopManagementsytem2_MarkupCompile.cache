@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\GUI\GUI\shopManagementsytem2\obj\Debug\net8.0-windows\
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\shopManagementsytem2\obj\Debug\net8.0-windows\
 shopManagementsytem2
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\GUI\GUI\shopManagementsytem2\App.xaml
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\shopManagementsytem2\App.xaml
 61839199849
 
-21-884817298
-217-1116142413
+231855060200
+2171931858386
 AddMenu.xaml;AdminWindow.xaml;MainWindow.xaml;ShopkeeperDashboard.xaml;UserDashboard.xaml;ViewMenu.xaml;
 
 False

@@ -22,7 +22,13 @@
             <!-- Content Area -->
             <Grid DockPanel.Dock="Right" Name="contentArea">
                 <TextBlock x:Name="textBlock" Text="Welcome to your Dashboard!" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+                <StackPanel x:Name="ordersPanel" Visibility="Collapsed">
+                    <ListBox x:Name="listBoxOrders" />
+                    <Button Content="Clear Order History" Name="btnClearOrderHistory" Width="230" Margin="10" Click="btnClearOrderHistory_Click"/>
+                </StackPanel>
             </Grid>
         </DockPanel>
     </Grid>
 </Window>
+
+

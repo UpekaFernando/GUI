@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GUI\\GUI\\shopManagementsytem2\\shopManagementsytem2.csproj": {}
+    "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\shopManagementsytem2.csproj": {}
   },
   "projects": {
-    "D:\\GUI\\GUI\\shopManagementsytem2\\shopManagementsytem2.csproj": {
+    "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\shopManagementsytem2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GUI\\GUI\\shopManagementsytem2\\shopManagementsytem2.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\shopManagementsytem2.csproj",
         "projectName": "shopManagementsytem2",
-        "projectPath": "D:\\GUI\\GUI\\shopManagementsytem2\\shopManagementsytem2.csproj",
+        "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\shopManagementsytem2.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\GUI\\GUI\\shopManagementsytem2\\obj\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\CLONED\\GUI\\shopManagementsytem2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -84,7 +84,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
