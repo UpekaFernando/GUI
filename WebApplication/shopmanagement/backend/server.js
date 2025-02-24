@@ -39,6 +39,16 @@ app.post('/login/:role', (req, res) => {
   });
 });
 
+app.get('/shops', (req, res) => {
+  const query = 'SELECT id, shop_name FROM users WHERE role = "shopkeeper"';
+  db.query(query, (err, results) => {
+    if (err) {
+      return res.status(500).json({ message: 'Failed to fetch shops' });
+    }
+    res.status(200).json(results);
+  });
+});
+
 app.post('/add-menu', (req, res) => {
   const { shopkeeperId, name, description, price } = req.body;
 
@@ -82,6 +92,18 @@ app.get('/orders/:shopkeeperId', (req, res) => {
   db.query(query, [shopkeeperId], (err, results) => {
     if (err) {
       return res.status(500).json({ message: 'Failed to fetch orders' });
+    }
+    res.status(200).json(results);
+  });
+});
+
+app.get('/user-orders/:userId', (req, res) => {
+  const { userId } = req.params;
+
+  const query = 'SELECT * FROM orders WHERE user_id = ?';
+  db.query(query, [userId], (err, results) => {
+    if (err) {
+      return res.status(500).json({ message: 'Failed to fetch user orders' });
     }
     res.status(200).json(results);
   });

@@ -3,15 +3,29 @@ import './UserDashboard.css';
 
 function UserDashboard() {
   const [activeTab, setActiveTab] = useState('home');
+  const [shops, setShops] = useState([]);
+  const [selectedShop, setSelectedShop] = useState(null);
   const [menuItems, setMenuItems] = useState([]);
+  const [orderHistory, setOrderHistory] = useState([]);
   const userId = 1; // Replace with actual user ID from login
-  const shopkeeperId = 1; // Replace with actual shopkeeper ID
 
   useEffect(() => {
     if (activeTab === 'nearbyShops') {
-      fetchMenuItems(shopkeeperId).then(setMenuItems).catch(console.error);
+      fetchShops().then(setShops).catch(console.error);
+    } else if (activeTab === 'orderHistory') {
+      fetchUserOrders(userId).then(setOrderHistory).catch(console.error);
     }
   }, [activeTab]);
+
+  const fetchShops = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/shops');
+      const result = await response.json();
+      return result;
+    } catch (error) {
+      throw new Error('Failed to fetch shops');
+    }
+  };
 
   const fetchMenuItems = async (shopkeeperId) => {
     try {
@@ -23,9 +37,19 @@ function UserDashboard() {
     }
   };
 
+  const fetchUserOrders = async (userId) => {
+    try {
+      const response = await fetch(`http://localhost:3001/user-orders/${userId}`);
+      const result = await response.json();
+      return result;
+    } catch (error) {
+      throw new Error('Failed to fetch user orders');
+    }
+  };
+
   const handlePlaceOrder = async (menuItemId) => {
     const quantity = 1; // Replace with actual quantity
-    const data = { userId, shopkeeperId, menuItemId, quantity };
+    const data = { userId, shopkeeperId: selectedShop.id, menuItemId, quantity };
     try {
       const response = await fetch('http://localhost:3001/place-order', {
         method: 'POST',
@@ -53,7 +77,11 @@ function UserDashboard() {
             <div className="nearby-shops">
               <h3>Nearby Shops</h3>
               <ul className="shop-list">
-                {/* Shops will be dynamically loaded here */}
+                {shops.map(shop => (
+                  <li key={shop.id} onClick={() => setSelectedShop(shop)}>
+                    {shop.shop_name}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -63,13 +91,28 @@ function UserDashboard() {
           <div className="tab-content">
             <h3>Nearby Shops</h3>
             <ul className="shop-list">
-              {menuItems.map(item => (
-                <li key={item.id}>
-                  {item.name} - ${item.price}
-                  <button onClick={() => handlePlaceOrder(item.id)}>Order</button>
+              {shops.map(shop => (
+                <li key={shop.id} onClick={() => {
+                  setSelectedShop(shop);
+                  fetchMenuItems(shop.id).then(setMenuItems).catch(console.error);
+                }}>
+                  {shop.shop_name}
                 </li>
               ))}
             </ul>
+            {selectedShop && (
+              <div>
+                <h3>Menu for {selectedShop.shop_name}</h3>
+                <ul className="menu-list">
+                  {menuItems.map(item => (
+                    <li key={item.id}>
+                      {item.name} - ${item.price}
+                      <button onClick={() => handlePlaceOrder(item.id)}>Order</button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         );
       case 'offers':
@@ -110,7 +153,11 @@ function UserDashboard() {
           <div className="tab-content">
             <h3>Order History</h3>
             <ul className="order-history">
-              {/* Order history will be dynamically loaded here */}
+              {orderHistory.map(order => (
+                <li key={order.id}>
+                  Order ID: {order.id}, Menu Item ID: {order.menu_item_id}, Quantity: {order.quantity}, Date: {order.order_date}
+                </li>
+              ))}
             </ul>
             <button className="btn" onClick={() => alert('Order history cleared!')}>
               Clear Order History
