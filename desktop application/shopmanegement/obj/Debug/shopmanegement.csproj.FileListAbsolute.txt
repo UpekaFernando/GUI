@@ -18,3 +18,16 @@ D:\GUI\GUI\desktop application\shopmanegement\obj\Debug\shopkeeperdashboard.baml
 D:\GUI\GUI\desktop application\shopmanegement\obj\Debug\shopkeeperdashboard.g.cs
 D:\GUI\GUI\desktop application\shopmanegement\obj\Debug\SelectMenu.g.cs
 D:\GUI\GUI\desktop application\shopmanegement\obj\Debug\shopmanegement_MarkupCompile.lref
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\shopmanegement.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\MainWindow.baml
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\shopkeeperdashboard.baml
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\UserDashboard.baml
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\MainWindow.g.cs
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\SelectMenu.g.cs
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\shopkeeperdashboard.g.cs
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\UserDashboard.g.cs
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\App.g.cs
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\shopmanegement_MarkupCompile.cache
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\shopmanegement_MarkupCompile.lref
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\shopmanegement.exe
+C:\Users\User\OneDrive\Desktop\CLONED\GUI\desktop application\shopmanegement\obj\Debug\shopmanegement.pdb

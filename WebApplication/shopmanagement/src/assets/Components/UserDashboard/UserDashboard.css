@@ -1,0 +1,87 @@
+.user-dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .tabs {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+  
+  .tab:hover {
+    background-color: #0056b3;
+  }
+  
+  .tab-content-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .tab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .nearby-shops, .offer-list, .order-history {
+    width: 100%;
+  }
+  
+  .shop-list, .offer-list, .order-history {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .shop-list li, .offer-list li, .order-history li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .profile-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
