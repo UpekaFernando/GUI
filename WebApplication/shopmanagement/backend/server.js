@@ -61,6 +61,31 @@ app.post('/add-menu', (req, res) => {
   });
 });
 
+app.put('/edit-menu/:menuId', (req, res) => {
+  const { menuId } = req.params;
+  const { name, description, price } = req.body;
+
+  const query = 'UPDATE menu_items SET name = ?, description = ?, price = ? WHERE id = ?';
+  db.query(query, [name, description, price, menuId], (err, result) => {
+    if (err) {
+      return res.status(500).json({ message: 'Failed to edit menu item' });
+    }
+    res.status(200).json({ message: 'Menu item edited successfully' });
+  });
+});
+
+app.delete('/delete-menu/:menuId', (req, res) => {
+  const { menuId } = req.params;
+
+  const query = 'DELETE FROM menu_items WHERE id = ?';
+  db.query(query, [menuId], (err, result) => {
+    if (err) {
+      return res.status(500).json({ message: 'Failed to delete menu item' });
+    }
+    res.status(200).json({ message: 'Menu item deleted successfully' });
+  });
+});
+
 app.get('/menu/:shopkeeperId', (req, res) => {
   const { shopkeeperId } = req.params;
 
@@ -94,6 +119,18 @@ app.get('/orders/:shopkeeperId', (req, res) => {
       return res.status(500).json({ message: 'Failed to fetch orders' });
     }
     res.status(200).json(results);
+  });
+});
+
+app.delete('/clear-orders/:shopkeeperId', (req, res) => {
+  const { shopkeeperId } = req.params;
+
+  const query = 'DELETE FROM orders WHERE shopkeeper_id = ?';
+  db.query(query, [shopkeeperId], (err, result) => {
+    if (err) {
+      return res.status(500).json({ message: 'Failed to clear order history' });
+    }
+    res.status(200).json({ message: 'Order history cleared successfully' });
   });
 });
 
