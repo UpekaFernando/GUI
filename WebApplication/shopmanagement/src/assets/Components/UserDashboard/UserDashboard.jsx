@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { AppBar, Toolbar, Typography, Button, Container, List, ListItem, ListItemText, Paper, Grid, IconButton } from '@mui/material';
+import { ShoppingCart } from '@mui/icons-material';
 import './UserDashboard.css';
 
 function UserDashboard() {
@@ -63,45 +65,47 @@ function UserDashboard() {
   const renderContent = () => {
     switch (activeTab) {
       case 'home':
-        return <h2>Welcome! Explore nearby shops.</h2>;
+        return <Typography variant="h5">Welcome! Explore nearby shops.</Typography>;
       case 'nearbyShops':
         return (
-          <div>
-            <h3>Nearby Shops</h3>
-            <ul className="shop-list">
+          <Container>
+            <Typography variant="h6">Nearby Shops</Typography>
+            <List>
               {shops.map(shop => (
-                <li key={shop.id} onClick={() => handleShopClick(shop)}>
-                  {shop.shop_name}
-                </li>
+                <ListItem button key={shop.id} onClick={() => handleShopClick(shop)}>
+                  <ListItemText primary={shop.shop_name} />
+                </ListItem>
               ))}
-            </ul>
+            </List>
             {selectedShop && (
-              <div>
-                <h3>Menu for {selectedShop.shop_name}</h3>
-                <ul className="menu-list">
+              <Paper elevation={3} style={{ padding: '16px', marginTop: '16px' }}>
+                <Typography variant="h6">Menu for {selectedShop.shop_name}</Typography>
+                <List>
                   {menuItems.map(item => (
-                    <li key={item.id}>
-                      {item.name} - ${item.price}
-                      <button onClick={() => handlePlaceOrder(item.id)}>Order</button>
-                    </li>
+                    <ListItem key={item.id}>
+                      <ListItemText primary={`${item.name} - $${item.price}`} />
+                      <IconButton onClick={() => handlePlaceOrder(item.id)}>
+                        <ShoppingCart />
+                      </IconButton>
+                    </ListItem>
                   ))}
-                </ul>
-              </div>
+                </List>
+              </Paper>
             )}
-          </div>
+          </Container>
         );
       case 'orderHistory':
         return (
-          <div>
-            <h3>Order History</h3>
-            <ul className="order-history">
+          <Container>
+            <Typography variant="h6">Order History</Typography>
+            <List>
               {orderHistory.map(order => (
-                <li key={order.id}>
-                  Order ID: {order.id}, Menu Item ID: {order.menu_item_id}, Quantity: {order.quantity}, Date: {order.order_date}
-                </li>
+                <ListItem key={order.id}>
+                  <ListItemText primary={`Order ID: ${order.id}, Menu Item ID: ${order.menu_item_id}, Quantity: ${order.quantity}, Date: ${order.order_date}`} />
+                </ListItem>
               ))}
-            </ul>
-          </div>
+            </List>
+          </Container>
         );
       default:
         return null;
@@ -109,13 +113,20 @@ function UserDashboard() {
   };
 
   return (
-    <div className="user-dashboard">
-      <div className="tabs">
-        <button onClick={() => setActiveTab('home')}>Home</button>
-        <button onClick={() => setActiveTab('nearbyShops')}>Nearby Shops</button>
-        <button onClick={() => setActiveTab('orderHistory')}>Order History</button>
-      </div>
-      <div className="tab-content-container">{renderContent()}</div>
+    <div>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" style={{ flexGrow: 1 }}>
+            User Dashboard
+          </Typography>
+          <Button color="inherit" onClick={() => setActiveTab('home')}>Home</Button>
+          <Button color="inherit" onClick={() => setActiveTab('nearbyShops')}>Nearby Shops</Button>
+          <Button color="inherit" onClick={() => setActiveTab('orderHistory')}>Order History</Button>
+        </Toolbar>
+      </AppBar>
+      <Container style={{ marginTop: '16px' }}>
+        {renderContent()}
+      </Container>
     </div>
   );
 }
