@@ -1,0 +1,408 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\my_desktop_app\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\my_desktop_app\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_customerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_customerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_customerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_customerview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\function_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\function_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\uc_delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\uc_delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\my_desktop_app\\uc_delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\uc_delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_update.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_update.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_placeorder.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_placeorder.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\allusercontrol\\uc_contact.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\allusercontrol\\uc_contact.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|c:\\users\\dell\\documents\\dsa_project\\dsa_project\\my_desktop_app\\uc_delete.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2F73924-41C8-481E-9CDB-20F7EB9D81EC}|MY_DESKTOP_APP\\MY_DESKTOP_APP.csproj|solutionrelative:my_desktop_app\\uc_delete.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UC_WELCOME.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_WELCOME.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_WELCOME.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_WELCOME.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_WELCOME.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T20:27:58.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UC_CUSTOMERVIEW.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_CUSTOMERVIEW.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_CUSTOMERVIEW.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_CUSTOMERVIEW.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_CUSTOMERVIEW.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowBkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T18:23:44.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Dashboard.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Dashboard.cs [Design]",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T07:40:25.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Login.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Login.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Login.cs [Design]",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T17:48:35.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Login.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Login.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Login.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Login.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwCMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T07:31:56.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dashboard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Dashboard.Designer.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Dashboard.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Dashboard.Designer.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Dashboard.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:38:22.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UC_WELCOME.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_WELCOME.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_WELCOME.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_WELCOME.cs [Design]",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_WELCOME.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T18:15:25.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UC_CUSTOMERVIEW.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_CUSTOMERVIEW.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_CUSTOMERVIEW.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_CUSTOMERVIEW.cs [Design]",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_CUSTOMERVIEW.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T07:38:50.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UC_CONTACT.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_CONTACT.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_CONTACT.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_CONTACT.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_CONTACT.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowCEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T16:55:52.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UC_CONTACT.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_CONTACT.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_CONTACT.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_CONTACT.cs [Design]",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_CONTACT.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T07:39:15.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UC_UPDATE.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_UPDATE.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_UPDATE.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_UPDATE.cs [Design]",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_UPDATE.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:44:51.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UC_Placeorder.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_Placeorder.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_Placeorder.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_Placeorder.cs [Design]",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_Placeorder.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:51:36.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UC_Placeorder.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_Placeorder.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_Placeorder.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_Placeorder.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_Placeorder.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:51:41.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Function_db.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Function_db.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Function_db.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Function_db.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Function_db.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T18:37:41.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UC_DELETE.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\UC_DELETE.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\UC_DELETE.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\UC_DELETE.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\UC_DELETE.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowC8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:17:21.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UC_DELETE.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\UC_DELETE.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\UC_DELETE.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\UC_DELETE.cs [Design]",
+              "RelativeToolTip": "MY_DESKTOP_APP\\UC_DELETE.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:13:56.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UC_UPDATE.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_UPDATE.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_UPDATE.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_UPDATE.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_UPDATE.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA3wC0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:44:56.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UC_ADD.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_ADD.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_ADD.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_ADD.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_ADD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T07:33:01.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UC_ADD.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_ADD.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_ADD.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_ADD.cs [Design]",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_ADD.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T07:32:58.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UC_UPDATE.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_UPDATE.Designer.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_UPDATE.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_UPDATE.Designer.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_UPDATE.Designer.cs",
+              "ViewState": "AgIAADABAAAAAAAAAAArwEMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T18:04:54.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UC_Placeorder.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_Placeorder.Designer.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_Placeorder.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_Placeorder.Designer.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_Placeorder.Designer.cs",
+              "ViewState": "AgIAANsAAAAAAAAAAAArwO4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T18:49:22.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UC_CONTACT.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_CONTACT.Designer.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Allusercontrol\\UC_CONTACT.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Allusercontrol\\UC_CONTACT.Designer.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Allusercontrol\\UC_CONTACT.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T18:40:51.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Dashboard.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\Dashboard.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\Dashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwFUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T07:35:43.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UC_DELETE.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\UC_DELETE.Designer.cs",
+              "RelativeDocumentMoniker": "MY_DESKTOP_APP\\UC_DELETE.Designer.cs",
+              "ToolTip": "C:\\Users\\DELL\\Documents\\DSA_Project\\dsa_project\\MY_DESKTOP_APP\\UC_DELETE.Designer.cs",
+              "RelativeToolTip": "MY_DESKTOP_APP\\UC_DELETE.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T17:18:23.609Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

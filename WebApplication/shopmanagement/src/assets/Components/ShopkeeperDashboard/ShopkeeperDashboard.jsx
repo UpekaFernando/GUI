@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ShopkeeperDashboard.css';
+import { FaHome, FaPlus, FaList } from 'react-icons/fa';
 
 function ShopkeeperDashboard() {
   const navigate = useNavigate();
@@ -11,19 +12,32 @@ function ShopkeeperDashboard() {
   const [menuPrice, setMenuPrice] = useState('');
   const [orders, setOrders] = useState([]);
   const [editMenuId, setEditMenuId] = useState(null);
-  const shopkeeperId = 1; // Replace with actual shopkeeper ID from login
+  const shopkeeperId = localStorage.getItem('userId');
+  const userRole = localStorage.getItem('userRole');
 
   useEffect(() => {
+    if (!shopkeeperId || userRole !== 'shopkeeper') {
+      alert('Only shopkeepers have access to this page');
+      navigate('/login');
+      return;
+    }
+
     if (activePanel === 'orders') {
       fetchOrders(shopkeeperId);
     } else if (activePanel === 'addMenu') {
       fetchMenuItems(shopkeeperId);
     }
-  }, [activePanel]);
+  }, [activePanel, shopkeeperId, userRole]);
 
   const handleAddMenu = async (e) => {
     e.preventDefault();
-    const data = { shopkeeperId, name: menuName, description: menuDescription, price: menuPrice };
+    const data = { 
+      shopkeeperId: parseInt(shopkeeperId), 
+      name: menuName, 
+      description: menuDescription, 
+      price: parseFloat(menuPrice) 
+    };
+    
     try {
       const response = await fetch('http://localhost:3001/add-menu', {
         method: 'POST',
@@ -74,7 +88,7 @@ function ShopkeeperDashboard() {
 
   const fetchMenuItems = async (shopkeeperId) => {
     try {
-      const response = await fetch(`http://localhost:3001/menu/${shopkeeperId}`);
+      const response = await fetch(`http://localhost:3001/menu/${shopkeeperId}?role=shopkeeper&userId=${shopkeeperId}`);
       const result = await response.json();
       setMenuItems(result);
     } catch (error) {
@@ -105,6 +119,22 @@ function ShopkeeperDashboard() {
     }
   };
 
+  const handleUpdateOrderStatus = async (orderId, status) => {
+    try {
+      const response = await fetch(`http://localhost:3001/order/${orderId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ status }),
+      });
+      const result = await response.json();
+      alert(result.message);
+      fetchOrders(shopkeeperId);
+    } catch (error) {
+      console.error('Failed to update order', error);
+      alert('Failed to update order status');
+    }
+  };
+
   const renderContent = () => {
     switch (activePanel) {
       case 'home':
@@ -112,23 +142,23 @@ function ShopkeeperDashboard() {
       case 'addMenu':
         return (
           <div className="content">
-            <form onSubmit={editMenuId ? handleEditMenu : handleAddMenu}>
+            <form onSubmit={editMenuId ? handleEditMenu : handleAddMenu} className="menu-form">
               <input type="text" placeholder="Menu Name" value={menuName} onChange={(e) => setMenuName(e.target.value)} required />
               <textarea placeholder="Description" value={menuDescription} onChange={(e) => setMenuDescription(e.target.value)} required />
               <input type="number" placeholder="Price" value={menuPrice} onChange={(e) => setMenuPrice(e.target.value)} required />
-              <button type="submit">{editMenuId ? 'Edit Menu Item' : 'Add Menu Item'}</button>
+              <button type="submit" className="btn-submit">{editMenuId ? 'Edit Menu Item' : 'Add Menu Item'}</button>
             </form>
             <ul className="menu-list">
               {menuItems.map(item => (
-                <li key={item.id}>
+                <li key={item.id} className="menu-item">
                   {item.name} - ${item.price}
-                  <button onClick={() => {
+                  <button className="btn-edit" onClick={() => {
                     setEditMenuId(item.id);
                     setMenuName(item.name);
                     setMenuDescription(item.description);
                     setMenuPrice(item.price);
                   }}>Edit</button>
-                  <button onClick={() => handleDeleteMenu(item.id)}>Delete</button>
+                  <button className="btn-delete" onClick={() => handleDeleteMenu(item.id)}>Delete</button>
                 </li>
               ))}
             </ul>
@@ -136,15 +166,47 @@ function ShopkeeperDashboard() {
         );
       case 'orders':
         return (
-          <div className="content">
-            <ul className="orders-list">
-              {orders.map(order => (
-                <li key={order.id}>
-                  Order ID: {order.id}, Menu Item: {order.menu_item_name}, Quantity: {order.quantity}, Date: {order.order_date}
-                </li>
-              ))}
-            </ul>
-            <button className="btn" onClick={handleClearOrders}>Clear Order History</button>
+          <div className="order-panel">
+            <h3>Orders</h3>
+            {orders.length > 0 ? (
+              <div>
+                <table className="orders-table">
+                  <thead>
+                    <tr>
+                      <th>Order ID</th>
+                      <th>Customer</th>
+                      <th>Menu Item</th>
+                      <th>Quantity</th>
+                      <th>Date</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {orders.map(order => (
+                      <tr key={order.id}>
+                        <td>{order.id}</td>
+                        <td>{order.user_email}</td>
+                        <td>{order.menu_item_name}</td>
+                        <td>{order.quantity}</td>
+                        <td>{new Date(order.order_date).toLocaleString()}</td>
+                        <td>{order.status}</td>
+                        <td>
+                          {order.status !== 'completed' && (
+                            <button className="btn-complete" onClick={() => handleUpdateOrderStatus(order.id, 'completed')}>
+                              Mark as Completed
+                            </button>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <button className="clear-btn" onClick={handleClearOrders}>Clear All Orders</button>
+              </div>
+            ) : (
+              <p>No orders found</p>
+            )}
           </div>
         );
       default:
@@ -154,10 +216,13 @@ function ShopkeeperDashboard() {
 
   return (
     <div className="dashboard-container">
+      <header className="dashboard-header">
+        <h1>Shopkeeper Dashboard</h1>
+      </header>
       <div className="sidebar">
-        <button className="btn" onClick={() => setActivePanel('home')}>Home</button>
-        <button className="btn" onClick={() => setActivePanel('addMenu')}>Add Menu</button>
-        <button className="btn" onClick={() => setActivePanel('orders')}>Orders</button>
+        <button className="btn" onClick={() => setActivePanel('home')}><FaHome /> Home</button>
+        <button className="btn" onClick={() => setActivePanel('addMenu')}><FaPlus /> Add Menu</button>
+        <button className="btn" onClick={() => setActivePanel('orders')}><FaList /> Orders</button>
       </div>
       <div className="content-area">
         {renderContent()}

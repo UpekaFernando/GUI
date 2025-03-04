@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
     const data = { email, password };
     const endpoint = role === 'user' ? '/login/user' : '/login/shopkeeper';
-
+  
     try {
       const response = await fetch(`http://localhost:3001${endpoint}`, {
         method: 'POST',
@@ -22,16 +22,27 @@ function Login() {
         },
         body: JSON.stringify(data),
       });
-
+  
+      const result = await response.json();
       if (response.ok) {
-        alert(`${role.charAt(0).toUpperCase() + role.slice(1)} logged in successfully`);
+        // Add console log to verify the user ID
+        console.log('Login response:', result);
+        
+        // Store user ID in localStorage
+        localStorage.setItem('userId', result.userId.toString()); // Convert to string
+        localStorage.setItem('userRole', role);
+        
+        // Verify stored values
+        console.log('Stored userId:', localStorage.getItem('userId'));
+        console.log('Stored userRole:', localStorage.getItem('userRole'));
+        
         if (role === 'user') {
           navigate('/user-dashboard');
         } else {
           navigate('/dashboard');
         }
       } else {
-        alert('Login failed');
+        alert('Login failed: ' + result.message);
       }
     } catch (error) {
       console.error('Error:', error);
