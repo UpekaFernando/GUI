@@ -5,13 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:shopManagementsytem2"
         mc:Ignorable="d"
-               Title="UserDashboard" Height="450" Width="800">
+        Title="UserDashboard" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\User\OneDrive\Desktop\CLONED\GUI\shopManagementsytem2\login.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
         <!-- Tab Control -->
-        <TabControl>
+        <TabControl Opacity="0.9">
             <!-- Home Tab -->
             <TabItem Header="Home">
-                <Grid>
+                <Grid Opacity="0.9">
                     <!-- Welcome Message -->
                     <TextBlock Text="Welcome, [User Name]! Explore shops around the campus." FontSize="18" FontWeight="Bold" Margin="20" />
 
@@ -33,7 +36,7 @@
             <!-- Updated Nearby Shops Tab -->
             <TabItem Header="Nearby Shops">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <StackPanel Orientation="Vertical" Margin="10">
+                    <StackPanel Orientation="Vertical" Margin="10" Opacity="0.9">
                         <TextBlock Text="Nearby Shops" FontSize="16" FontWeight="Bold" Margin="0,0,0,10" />
                         <ListBox x:Name="listBoxAllShops" SelectionChanged="ListBoxAllShops_SelectionChanged">
                             <!-- Shops will be dynamically loaded here -->
@@ -44,7 +47,7 @@
 
             <!-- Offers/Discounts Tab -->
             <TabItem Header="Offers/Discounts">
-                <Grid>
+                <Grid Opacity="0.9">
                     <TextBlock Text="Special Offers" FontSize="16" FontWeight="Bold" Margin="10" />
                     <ListBox Margin="10,40,10,10">
                         <ListBoxItem Content="20% off at The Food Hub" />
@@ -56,7 +59,7 @@
 
             <!-- Favorites Tab -->
             <TabItem Header="Favorites">
-                <Grid>
+                <Grid Opacity="0.9">
                     <TextBlock Text="Your Favorite Shops" FontSize="16" FontWeight="Bold" Margin="10" />
                     <!-- Add favorite shops content here -->
                 </Grid>
@@ -64,7 +67,7 @@
 
             <!-- Profile Tab -->
             <TabItem Header="Profile">
-                <Grid Margin="2,0,-2,0">
+                <Grid Margin="2,0,-2,0" Opacity="0.9">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="140*"/>
                         <ColumnDefinition Width="7*"/>
@@ -92,16 +95,19 @@
 
             <!-- Order History Tab -->
             <TabItem Header="Order History">
-                <Grid>
-                    <TextBlock Text="Order History" FontSize="16" FontWeight="Bold" Margin="10" />
-                    <ListBox x:Name="listBoxOrderHistory" Margin="10,40,10,10">
+                <Grid Opacity="0.9">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="257*"/>
+                        <ColumnDefinition Width="140*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Order History" FontSize="16" FontWeight="Bold" Margin="10,10,10,10" Grid.ColumnSpan="2" />
+                    <ListBox x:Name="listBoxOrderHistory" Margin="10,40,10,10" SelectionChanged="listBoxOrderHistory_SelectionChanged" Grid.ColumnSpan="2">
                         <!-- Order history will be dynamically loaded here -->
                     </ListBox>
-                    <Button Content="Clear Order History" Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10"
-                            Click="ClearOrderHistory_Click" />
+                    <Button Content="Clear Order History" Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10"
+                            Click="ClearOrderHistory_Click" Grid.Column="1" />
                 </Grid>
             </TabItem>
         </TabControl>
     </Grid>
 </Window>
-

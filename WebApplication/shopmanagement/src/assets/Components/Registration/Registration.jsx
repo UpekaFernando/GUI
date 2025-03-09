@@ -33,27 +33,71 @@ export default function Register() {
   };
 
   return (
-    <div>
-      <h2>Register</h2>
-      <button onClick={() => setRole("user")}>User</button>
-      <button onClick={() => setRole("shopkeeper")}>Shopkeeper</button>
+    <div className="auth-page">
+      <div className="auth-header">Food Management</div>
+      <div className={`registration-container ${role === 'user' ? 'user-mode' : 'shopkeeper-mode'}`}>
+        <h2>Register</h2>
+        <div className="role-selection">
+          <button 
+            className={`role-btn ${role === 'user' ? 'active' : ''}`}
+            onClick={() => setRole('user')}
+          >
+            User
+          </button>
+          <button 
+            className={`role-btn ${role === 'shopkeeper' ? 'active' : ''}`}
+            onClick={() => setRole('shopkeeper')}
+          >
+            Shopkeeper
+          </button>
+        </div>
+        
+        <form onSubmit={handleSubmit}>
+          {role === "shopkeeper" && (
+            <div className="form-group">
+              <label>Shop Name:</label>
+              <input
+                type="text"
+                value={shopName}
+                onChange={(e) => setShopName(e.target.value)}
+                required
+              />
+            </div>
+          )}
+          <div className="form-group">
+            <label>Email:</label>
+            <input 
+              type="email" 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)} 
+              required 
+            />
+          </div>
+          <div className="form-group">
+            <label>Password:</label>
+            <input 
+              type="password" 
+              value={password}
+              onChange={(e) => setPassword(e.target.value)} 
+              required 
+            />
+          </div>
+          <div className="form-group">
+            <label>Confirm Password:</label>
+            <input 
+              type="password" 
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)} 
+              required 
+            />
+          </div>
+          <button type="submit">Register</button>
+        </form>
 
-      <form onSubmit={handleSubmit}>
-        {role === "shopkeeper" && (
-          <input
-            type="text"
-            placeholder="Shop Name"
-            onChange={(e) => setShopName(e.target.value)}
-            required
-          />
-        )}
-        <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
-        <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
-        <input type="password" placeholder="Confirm Password" onChange={(e) => setConfirmPassword(e.target.value)} required />
-        <button type="submit">Register</button>
-      </form>
-
-      <p>Already have an account? <Link to="/login">Login here</Link></p>
+        <p>
+          Already have an account? <Link to="/login">Login here</Link>
+        </p>
+      </div>
     </div>
   );
 }

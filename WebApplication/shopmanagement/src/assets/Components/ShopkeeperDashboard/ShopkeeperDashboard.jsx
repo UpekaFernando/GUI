@@ -1,7 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ShopkeeperDashboard.css';
-import { FaHome, FaPlus, FaList } from 'react-icons/fa';
+import { 
+  FaHome, 
+  FaPlus, 
+  FaList, 
+  FaUser, 
+  FaComments,
+  FaStore, 
+  FaMapMarkerAlt, 
+  FaPhone, 
+  FaEnvelope, 
+  FaIdCard 
+} from 'react-icons/fa';
 
 function ShopkeeperDashboard() {
   const navigate = useNavigate();
@@ -14,6 +25,7 @@ function ShopkeeperDashboard() {
   const [editMenuId, setEditMenuId] = useState(null);
   const shopkeeperId = localStorage.getItem('userId');
   const userRole = localStorage.getItem('userRole');
+  const [shopName] = useState(localStorage.getItem('shopName') || 'My Shop');
 
   useEffect(() => {
     if (!shopkeeperId || userRole !== 'shopkeeper') {
@@ -139,6 +151,8 @@ function ShopkeeperDashboard() {
     switch (activePanel) {
       case 'home':
         return <div className="content">Welcome to your Dashboard!</div>;
+    case 'profile':
+          return <div className="content">profile is here!</div>;
       case 'addMenu':
         return (
           <div className="content">
@@ -151,7 +165,7 @@ function ShopkeeperDashboard() {
             <ul className="menu-list">
               {menuItems.map(item => (
                 <li key={item.id} className="menu-item">
-                  {item.name} - ${item.price}
+                  {item.name} - Rs. {item.price}
                   <button className="btn-edit" onClick={() => {
                     setEditMenuId(item.id);
                     setMenuName(item.name);
@@ -209,6 +223,51 @@ function ShopkeeperDashboard() {
             )}
           </div>
         );
+      case 'feedback':
+        return (
+          <div className="content">
+            <h2>Customer Feedback</h2>
+            <p>This is your feedback section</p>
+          </div>
+        );
+      case 'profile':
+        return (
+          <div className="profile-container">
+            <div className="profile-header">
+              <div className="profile-avatar-container">
+                <div className="profile-avatar">
+                  <FaUser className="avatar-icon" />
+                </div>
+              </div>
+              <div className="profile-info">
+                <h2>{shopName}</h2>
+                <div className="shop-meta">
+                  <span className="shop-id">
+                    <FaIdCard /> ID: {shopkeeperId}
+                  </span>
+                  <div className="shop-details">
+                    <div className="shop-info-item">
+                      <FaStore className="shop-info-icon" />
+                      <span>Restaurant Type: Fast Food</span>
+                    </div>
+                    <div className="shop-info-item">
+                      <FaMapMarkerAlt className="shop-info-icon" />
+                      <span>Location: City Center, Main Street</span>
+                    </div>
+                    <div className="shop-info-item">
+                      <FaPhone className="shop-info-icon" />
+                      <span>Contact: +1234567890</span>
+                    </div>
+                    <div className="shop-info-item">
+                      <FaEnvelope className="shop-info-icon" />
+                      <span>Email: {localStorage.getItem('shopkeeperEmail') || 'shop@example.com'}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
       default:
         return <div className="content">Welcome to your Dashboard!</div>;
     }
@@ -216,13 +275,23 @@ function ShopkeeperDashboard() {
 
   return (
     <div className="dashboard-container">
-      <header className="dashboard-header">
-        <h1>Shopkeeper Dashboard</h1>
-      </header>
+      <div className="dashboard-header">Food Management</div>
       <div className="sidebar">
-        <button className="btn" onClick={() => setActivePanel('home')}><FaHome /> Home</button>
-        <button className="btn" onClick={() => setActivePanel('addMenu')}><FaPlus /> Add Menu</button>
-        <button className="btn" onClick={() => setActivePanel('orders')}><FaList /> Orders</button>
+        <button className="btn" onClick={() => setActivePanel('home')}>
+          <FaHome /> Home
+        </button>
+        <button className="btn" onClick={() => setActivePanel('addMenu')}>
+          <FaPlus /> Add Menu
+        </button>
+        <button className="btn" onClick={() => setActivePanel('orders')}>
+          <FaList /> Orders
+        </button>
+        <button className="btn" onClick={() => setActivePanel('feedback')}>
+          <FaComments /> Customer Feedback
+        </button>
+        <button className="btn" onClick={() => setActivePanel('profile')}>
+          <FaUser /> Profile
+        </button>
       </div>
       <div className="content-area">
         {renderContent()}

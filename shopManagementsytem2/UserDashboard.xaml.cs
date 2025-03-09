@@ -17,7 +17,6 @@ namespace shopManagementsytem2
     /// <summary>
     /// Interaction logic for UserDashboard.xaml
     /// </summary>
-
     public partial class UserDashboard : Window
     {
         public UserDashboard()
@@ -82,7 +81,7 @@ namespace shopManagementsytem2
                 context.Orders.RemoveRange(context.Orders);
                 context.SaveChanges();
             }
-            listBoxOrderHistory.Items.Clear();
+            listBoxOrderHistory.ItemsSource = null;
         }
 
         private void TopUpButton_Click(object sender, RoutedEventArgs e)
@@ -109,6 +108,11 @@ namespace shopManagementsytem2
                 textBox.Text = "Search for a shop or product...";
                 textBox.Foreground = new SolidColorBrush(Colors.Gray);
             }
+        }
+
+        private void listBoxOrderHistory_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // Handle selection change if needed
         }
     }
 }

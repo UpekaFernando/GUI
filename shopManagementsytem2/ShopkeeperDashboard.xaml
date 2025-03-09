@@ -7,10 +7,13 @@
         mc:Ignorable="d"
         Title="ShopkeeperDashboard" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\User\OneDrive\Desktop\CLONED\GUI\shopManagementsytem2\login.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
         <!-- Dock Panel for Navigation and Content -->
         <DockPanel>
             <!-- Left Navigation Panel -->
-            <StackPanel DockPanel.Dock="Left" Width="250" Background="LightGray">
+            <StackPanel DockPanel.Dock="Left" Width="250" Background="#AAFFFFFF">
                 <Button Content="Home" Name="btnHome" Width="230" Margin="10" Click="btnHome_Click"/>
                 <Button Content="Add Menu" Name="btnManageListings" Width="230" Margin="10" Click="btnManageListings_Click"/>
                 <Button Content="Orders" Name="btnOrders" Width="230" Margin="10" Click="btnOrders_Click"/>
@@ -20,7 +23,7 @@
             </StackPanel>
 
             <!-- Content Area -->
-            <Grid DockPanel.Dock="Right" Name="contentArea">
+            <Grid DockPanel.Dock="Right" Name="contentArea" Background="#AAFFFFFF">
                 <TextBlock x:Name="textBlock" Text="Welcome to your Dashboard!" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
                 <StackPanel x:Name="ordersPanel" Visibility="Collapsed">
                     <ListBox x:Name="listBoxOrders" />
@@ -30,5 +33,3 @@
         </DockPanel>
     </Grid>
 </Window>
-
-
