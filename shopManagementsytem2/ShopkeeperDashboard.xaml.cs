@@ -93,6 +93,13 @@ namespace shopManagementsytem2
                 listBoxOrders.ItemsSource = orders.Select(o => $"{o.OrderDate}: {o.MenuName}").ToList();
             }
         }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }
 

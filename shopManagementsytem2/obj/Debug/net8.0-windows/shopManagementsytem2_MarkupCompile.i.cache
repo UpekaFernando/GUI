@@ -8,12 +8,12 @@ C:\Users\User\OneDrive\Desktop\CLONED\GUI\shopManagementsytem2\obj\Debug\net8.0-
 shopManagementsytem2
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\User\OneDrive\Desktop\CLONED\GUI\shopManagementsytem2\App.xaml
 61839199849
 
 25-1061694680
-217-1594851209
+217-1971014475
 AddMenu.xaml;AdminWindow.xaml;MainWindow.xaml;ShopkeeperDashboard.xaml;UserDashboard.xaml;ViewMenu.xaml;
 
 True

@@ -81,11 +81,13 @@
                     <TextBlock TextAlignment="Center" Text="User" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="84,140,0,0" Grid.Column="2" />
 
                     <!-- Balance Display -->
-                    <TextBlock Text="Balance: $50" FontSize="16" HorizontalAlignment="Left" Margin="59,180,0,0" Grid.Column="2" />
+                    <TextBlock Text="Balance: Rs 1500" FontSize="16" HorizontalAlignment="Left" Margin="59,180,0,0" Grid.Column="2" />
 
                     <!-- Top-Up Button -->
                     <Button Content="Top Up Balance" Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,220,0,0"
                             Background="#0078D7" Foreground="White" Click="TopUpButton_Click" Grid.Column="2" />
+                    <Button Content="Logout" Width="100" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,352,22,0"
+        Click="LogoutButton_Click" RenderTransformOrigin="2.393,10.187" Grid.Column="2"/>
 
                     <!-- Settings and Notifications Icons -->
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" Grid.Column="2"/>

@@ -114,5 +114,12 @@ namespace shopManagementsytem2
         {
             // Handle selection change if needed
         }
+
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }

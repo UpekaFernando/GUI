@@ -33,7 +33,7 @@ namespace shopManagementsytem2
             using (var context = new MenuDb())
             {
                 var menus = context.Menus.Where(m => m.ShopName == selectedShop).ToList();
-                listBoxMenus.ItemsSource = menus.Select(m => $"{m.Name} - ${m.Price}").ToList();
+                listBoxMenus.ItemsSource = menus.Select(m => $"{m.Name} - Rs {m.Price}").ToList();
             }
         }
 
