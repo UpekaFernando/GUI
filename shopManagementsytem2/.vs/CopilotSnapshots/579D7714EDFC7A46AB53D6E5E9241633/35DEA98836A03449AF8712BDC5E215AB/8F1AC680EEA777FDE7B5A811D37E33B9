@@ -1,0 +1,40 @@
+﻿using System;
+using System.Configuration;
+using System.Data;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Media;
+
+namespace shopManagementsytem2
+{
+    /// <summary>
+    /// Interaction logic for App.xaml
+    /// </summary>
+    public partial class App : Application
+    {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            
+            // Initialize the database with seed data if needed
+            Task.Run(() => MenuDb.Initialize());
+            
+            // Pre-cache the background images to improve performance
+            Task.Run(() => 
+            {
+                try
+                {
+                    // This will preload and cache the images
+                    ImageHelper.GetBackgroundImage(isLoginScreen: true);
+                    ImageHelper.GetBackgroundImage(isLoginScreen: false);
+                    ImageHelper.GetProfileImage();
+                }
+                catch (Exception ex)
+                {
+                    // Log any errors but don't crash the app
+                    System.Diagnostics.Debug.WriteLine($"Error preloading images: {ex.Message}");
+                }
+            });
+        }
+    }
+}

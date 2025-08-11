@@ -1,0 +1,147 @@
+﻿using System;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Net;
+using System.IO;
+using System.Windows;
+
+namespace shopManagementsytem2
+{
+    /// <summary>
+    /// Helper class for loading images from web URLs
+    /// </summary>
+    public static class ImageHelper
+    {
+        // Default image URLs to use in the application
+        private const string DefaultLoginBackgroundUrl = "https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=1200";
+        private const string DefaultDashboardBackgroundUrl = "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200";
+        private const string DefaultProfileImageUrl = "https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=400";
+        private const string DefaultFallbackImageUrl = "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200";
+
+        // Cache for already loaded images to improve performance
+        private static readonly System.Collections.Concurrent.ConcurrentDictionary<string, ImageBrush> ImageCache 
+            = new System.Collections.Concurrent.ConcurrentDictionary<string, ImageBrush>();
+
+        /// <summary>
+        /// Gets a background ImageBrush from a URL with a fallback to the default image
+        /// </summary>
+        public static ImageBrush GetBackgroundImage(string url = null, bool isLoginScreen = true)
+        {
+            string imageUrl = !string.IsNullOrEmpty(url) ? url : 
+                              (isLoginScreen ? DefaultLoginBackgroundUrl : DefaultDashboardBackgroundUrl);
+
+            // Check if we already have this image in the cache
+            if (ImageCache.TryGetValue(imageUrl, out ImageBrush cachedBrush))
+            {
+                return cachedBrush;
+            }
+
+            try
+            {
+                // Create the ImageBrush with web image
+                var brush = CreateImageBrushFromUrl(imageUrl);
+                
+                // Add to cache
+                ImageCache[imageUrl] = brush;
+                
+                return brush;
+            }
+            catch
+            {
+                // If there's an error, try the fallback URL
+                try
+                {
+                    var fallbackBrush = CreateImageBrushFromUrl(DefaultFallbackImageUrl);
+                    ImageCache[imageUrl] = fallbackBrush;
+                    return fallbackBrush;
+                }
+                catch
+                {
+                    // Last resort - create a solid color brush image
+                    return CreateSolidColorImageBrush(Colors.LightSteelBlue);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets a profile ImageBrush from a URL with a fallback
+        /// </summary>
+        public static ImageBrush GetProfileImage(string url = null)
+        {
+            string imageUrl = !string.IsNullOrEmpty(url) ? url : DefaultProfileImageUrl;
+            
+            // Check if we already have this image in the cache
+            if (ImageCache.TryGetValue(imageUrl, out ImageBrush cachedBrush))
+            {
+                return cachedBrush;
+            }
+
+            try
+            {
+                // Create the ImageBrush with web image
+                var brush = CreateImageBrushFromUrl(imageUrl);
+                
+                // Add to cache
+                ImageCache[imageUrl] = brush;
+                
+                return brush;
+            }
+            catch
+            {
+                // Return a solid color brush if all else fails
+                return CreateSolidColorImageBrush(Colors.DodgerBlue);
+            }
+        }
+
+        /// <summary>
+        /// Create an ImageBrush from a URL
+        /// </summary>
+        private static ImageBrush CreateImageBrushFromUrl(string url)
+        {
+            // Download the image
+            using (WebClient client = new WebClient())
+            {
+                client.Headers.Add("User-Agent", "Mozilla/5.0");
+                byte[] imageData = client.DownloadData(url);
+                
+                // Convert to a BitmapImage
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.StreamSource = new MemoryStream(imageData);
+                bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                bitmap.EndInit();
+                bitmap.Freeze(); // Make it thread-safe
+                
+                // Create and return the ImageBrush
+                ImageBrush brush = new ImageBrush(bitmap);
+                brush.Stretch = Stretch.UniformToFill;
+                return brush;
+            }
+        }
+        
+        /// <summary>
+        /// Creates an ImageBrush with a solid color as fallback
+        /// </summary>
+        private static ImageBrush CreateSolidColorImageBrush(Color color)
+        {
+            // Create a small bitmap with the solid color
+            var drawingVisual = new DrawingVisual();
+            var width = 10; // Small size is fine for solid color
+            var height = 10;
+            
+            using (var context = drawingVisual.RenderOpen())
+            {
+                context.DrawRectangle(new SolidColorBrush(color), null, new Rect(0, 0, width, height));
+            }
+            
+            var renderTarget = new RenderTargetBitmap(width, height, 96, 96, PixelFormats.Pbgra32);
+            renderTarget.Render(drawingVisual);
+            renderTarget.Freeze(); // Make it thread-safe
+            
+            // Create image brush from the bitmap
+            var brush = new ImageBrush(renderTarget);
+            brush.Stretch = Stretch.UniformToFill;
+            return brush;
+        }
+    }
+}

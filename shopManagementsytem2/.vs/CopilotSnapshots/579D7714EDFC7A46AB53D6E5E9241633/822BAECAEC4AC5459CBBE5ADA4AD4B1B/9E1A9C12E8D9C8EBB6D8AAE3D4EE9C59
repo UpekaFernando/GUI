@@ -1,0 +1,412 @@
+﻿using System;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Net;
+using System.IO;
+using System.Windows;
+using System.Windows.Threading;
+
+namespace shopManagementsytem2
+{
+    /// <summary>
+    /// Helper class for loading images from web URLs and local files
+    /// </summary>
+    public static class ImageHelper
+    {
+        // Default image URLs to use in the application
+        private const string DefaultLoginBackgroundUrl = "https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=1200";
+        private const string DefaultDashboardBackgroundUrl = "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200";
+        private const string DefaultProfileImageUrl = "https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=400";
+        private const string DefaultFallbackImageUrl = "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200";
+
+        // Cache for already loaded images to improve performance
+        private static readonly System.Collections.Concurrent.ConcurrentDictionary<string, ImageBrush> ImageCache 
+            = new System.Collections.Concurrent.ConcurrentDictionary<string, ImageBrush>();
+
+        /// <summary>
+        /// Gets a background ImageBrush from a URL with a fallback to the default image
+        /// </summary>
+        public static ImageBrush GetBackgroundImage(string url = null, bool isLoginScreen = true)
+        {
+            // Ensure we're on the UI thread
+            if (!IsOnUIThread())
+            {
+                // If we're not on the UI thread, dispatch to UI thread and wait for result
+                return (ImageBrush)Application.Current.Dispatcher.Invoke(
+                    () => GetBackgroundImage(url, isLoginScreen));
+            }
+
+            // First try the specific desktop path for login.jpg
+            if (isLoginScreen)
+            {
+                string desktopPath = @"C:\Users\Upeka\Desktop\login.jpg";
+                try
+                {
+                    if (File.Exists(desktopPath))
+                    {
+                        System.Diagnostics.Debug.WriteLine($"Found login.jpg at desktop path: {desktopPath}");
+                        
+                        // Cache key for this specific path
+                        string cacheKey = "desktop:" + desktopPath;
+                        
+                        // Check if in cache
+                        if (ImageCache.TryGetValue(cacheKey, out ImageBrush desktopCachedBrush))
+                        {
+                            return desktopCachedBrush;
+                        }
+                        
+                        // Load from the desktop path
+                        BitmapImage bitmap = new BitmapImage();
+                        bitmap.BeginInit();
+                        bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                        bitmap.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
+                        
+                        using (var stream = new FileStream(desktopPath, FileMode.Open, FileAccess.Read))
+                        {
+                            bitmap.StreamSource = stream;
+                            bitmap.EndInit();
+                            bitmap.Freeze(); // Make it thread-safe
+                        }
+                        
+                        // Create brush - must be on UI thread
+                        ImageBrush brush = new ImageBrush(bitmap);
+                        brush.Stretch = Stretch.UniformToFill;
+                        
+                        // Add to cache
+                        ImageCache[cacheKey] = brush;
+                        return brush;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Failed to load from desktop path: {ex.Message}");
+                    // Continue to other methods
+                }
+            }
+            
+            // Try to load from resource file
+            if (isLoginScreen)
+            {
+                try
+                {
+                    var resourceBrush = LoadImageFromResource(isLoginScreen ? "login.jpg" : "dashboard.jpg");
+                    if (resourceBrush != null)
+                    {
+                        return resourceBrush;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Resource loading failed: {ex.Message}");
+                    // Continue to other methods if this fails
+                }
+            }
+            
+            // Then try to load from local file
+            try
+            {
+                string fileName = isLoginScreen ? "login.jpg" : "dashboard.jpg";
+                var localImageBrush = LoadImageFromLocalFile(fileName);
+                if (localImageBrush != null)
+                {
+                    return localImageBrush;
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Local file loading failed: {ex.Message}");
+                // Continue to web URL if this fails
+            }
+
+            // Finally try to load from web URL
+            string imageUrl = !string.IsNullOrEmpty(url) ? url : 
+                             (isLoginScreen ? DefaultLoginBackgroundUrl : DefaultDashboardBackgroundUrl);
+
+            // Check if we already have this image in the cache
+            if (ImageCache.TryGetValue(imageUrl, out ImageBrush cachedBrush))
+            {
+                return cachedBrush;
+            }
+
+            try
+            {
+                // Create the ImageBrush with web image
+                var brush = CreateImageBrushFromUrl(imageUrl);
+                
+                // Add to cache
+                ImageCache[imageUrl] = brush;
+                
+                return brush;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Web image loading failed: {ex.Message}");
+                
+                // If there's an error, try the fallback URL
+                try
+                {
+                    var fallbackBrush = CreateImageBrushFromUrl(DefaultFallbackImageUrl);
+                    ImageCache[imageUrl] = fallbackBrush;
+                    return fallbackBrush;
+                }
+                catch
+                {
+                    // Last resort - create a solid color brush image
+                    return CreateSolidColorImageBrush(Colors.LightSteelBlue);
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Tries to load an image from application resources
+        /// </summary>
+        public static ImageBrush LoadImageFromResource(string resourceName)
+        {
+            // Ensure we're on the UI thread
+            if (!IsOnUIThread())
+            {
+                // If we're not on the UI thread, dispatch to UI thread and wait for result
+                return (ImageBrush)Application.Current.Dispatcher.Invoke(
+                    () => LoadImageFromResource(resourceName));
+            }
+
+            try
+            {
+                // First try with pack URI (for resources marked as Resource in project)
+                string packUri = $"pack://application:,,,/{resourceName}";
+                
+                if (ImageCache.TryGetValue(packUri, out ImageBrush resourceCachedBrush))
+                {
+                    return resourceCachedBrush;
+                }
+                
+                var uri = new Uri(packUri, UriKind.Absolute);
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.UriSource = uri;
+                bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                bitmap.EndInit();
+                bitmap.Freeze();
+                
+                ImageBrush brush = new ImageBrush(bitmap);
+                brush.Stretch = Stretch.UniformToFill;
+                
+                ImageCache[packUri] = brush;
+                return brush;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Resource load failed: {ex.Message}");
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Gets a profile ImageBrush from a URL with a fallback
+        /// </summary>
+        public static ImageBrush GetProfileImage(string url = null)
+        {
+            // Ensure we're on the UI thread
+            if (!IsOnUIThread())
+            {
+                // If we're not on the UI thread, dispatch to UI thread and wait for result
+                return (ImageBrush)Application.Current.Dispatcher.Invoke(
+                    () => GetProfileImage(url));
+            }
+
+            string imageUrl = !string.IsNullOrEmpty(url) ? url : DefaultProfileImageUrl;
+            
+            // Check if we already have this image in the cache
+            if (ImageCache.TryGetValue(imageUrl, out ImageBrush profileCachedBrush))
+            {
+                return profileCachedBrush;
+            }
+
+            try
+            {
+                // Create the ImageBrush with web image
+                var brush = CreateImageBrushFromUrl(imageUrl);
+                
+                // Add to cache
+                ImageCache[imageUrl] = brush;
+                
+                return brush;
+            }
+            catch
+            {
+                // Return a solid color brush if all else fails
+                return CreateSolidColorImageBrush(Colors.DodgerBlue);
+            }
+        }
+
+        /// <summary>
+        /// Loads an image from a local file path
+        /// </summary>
+        public static ImageBrush LoadImageFromLocalFile(string localPath)
+        {
+            // Ensure we're on the UI thread
+            if (!IsOnUIThread())
+            {
+                // If we're not on the UI thread, dispatch to UI thread and wait for result
+                return (ImageBrush)Application.Current.Dispatcher.Invoke(
+                    () => LoadImageFromLocalFile(localPath));
+            }
+
+            // Try different relative paths that might work
+            string[] possiblePaths = new[] 
+            {
+                localPath,
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, localPath),
+                Path.Combine(Environment.CurrentDirectory, localPath),
+                Path.Combine("..", localPath),
+                Path.Combine(@"..\..", localPath),
+                Path.Combine(@"..\..\..", localPath),
+                Path.GetFullPath(localPath),
+                @"C:\Users\Upeka\Desktop\" + localPath // Explicitly try the desktop path
+            };
+
+            foreach (var path in possiblePaths)
+            {
+                try
+                {
+                    if (File.Exists(path))
+                    {
+                        System.Diagnostics.Debug.WriteLine($"Found image at: {path}");
+                        
+                        // Cache key for local files
+                        string cacheKey = "local:" + path;
+
+                        // Check if in cache
+                        if (ImageCache.TryGetValue(cacheKey, out ImageBrush localCachedBrush))
+                        {
+                            return localCachedBrush;
+                        }
+
+                        // Create bitmap from file
+                        BitmapImage bitmap = new BitmapImage();
+                        bitmap.BeginInit();
+                        bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                        bitmap.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
+                        
+                        // Use a file stream to load the image to avoid file locking issues
+                        using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read))
+                        {
+                            bitmap.StreamSource = stream;
+                            bitmap.EndInit();
+                            bitmap.Freeze(); // Make it thread-safe
+                        }
+
+                        // Create brush
+                        ImageBrush brush = new ImageBrush(bitmap);
+                        brush.Stretch = Stretch.UniformToFill;
+                        
+                        // Add to cache
+                        ImageCache[cacheKey] = brush;
+                        
+                        return brush;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Failed loading {path}: {ex.Message}");
+                    // Continue trying other paths
+                }
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Create an ImageBrush from a URL
+        /// </summary>
+        private static ImageBrush CreateImageBrushFromUrl(string url)
+        {
+            // Downloading can be done on any thread
+            byte[] imageData;
+            using (WebClient client = new WebClient())
+            {
+                client.Headers.Add("User-Agent", "Mozilla/5.0");
+                imageData = client.DownloadData(url);
+            }
+
+            // Creating the image brush needs to be on UI thread
+            if (!IsOnUIThread())
+            {
+                return (ImageBrush)Application.Current.Dispatcher.Invoke(() => 
+                {
+                    // Convert to a BitmapImage
+                    BitmapImage bitmap = new BitmapImage();
+                    bitmap.BeginInit();
+                    bitmap.StreamSource = new MemoryStream(imageData);
+                    bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                    bitmap.EndInit();
+                    bitmap.Freeze(); // Make it thread-safe
+                    
+                    // Create and return the ImageBrush
+                    ImageBrush brush = new ImageBrush(bitmap);
+                    brush.Stretch = Stretch.UniformToFill;
+                    return brush;
+                });
+            }
+            else
+            {
+                // Convert to a BitmapImage
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.StreamSource = new MemoryStream(imageData);
+                bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                bitmap.EndInit();
+                bitmap.Freeze(); // Make it thread-safe
+                
+                // Create and return the ImageBrush
+                ImageBrush brush = new ImageBrush(bitmap);
+                brush.Stretch = Stretch.UniformToFill;
+                return brush;
+            }
+        }
+        
+        /// <summary>
+        /// Creates an ImageBrush with a solid color as fallback
+        /// </summary>
+        private static ImageBrush CreateSolidColorImageBrush(Color color)
+        {
+            // Ensure we're on the UI thread
+            if (!IsOnUIThread())
+            {
+                // If we're not on the UI thread, dispatch to UI thread and wait for result
+                return (ImageBrush)Application.Current.Dispatcher.Invoke(
+                    () => CreateSolidColorImageBrush(color));
+            }
+
+            // Create a small bitmap with the solid color
+            var drawingVisual = new DrawingVisual();
+            var width = 10; // Small size is fine for solid color
+            var height = 10;
+            
+            using (var context = drawingVisual.RenderOpen())
+            {
+                context.DrawRectangle(new SolidColorBrush(color), null, new Rect(0, 0, width, height));
+            }
+            
+            var renderTarget = new RenderTargetBitmap(width, height, 96, 96, PixelFormats.Pbgra32);
+            renderTarget.Render(drawingVisual);
+            renderTarget.Freeze(); // Make it thread-safe
+            
+            // Create image brush from the bitmap
+            var brush = new ImageBrush(renderTarget);
+            brush.Stretch = Stretch.UniformToFill;
+            return brush;
+        }
+
+        /// <summary>
+        /// Check if current thread is the UI thread
+        /// </summary>
+        private static bool IsOnUIThread()
+        {
+            if (Application.Current == null)
+                return false;
+                
+            return Dispatcher.CurrentDispatcher == Application.Current.Dispatcher;
+        }
+    }
+}

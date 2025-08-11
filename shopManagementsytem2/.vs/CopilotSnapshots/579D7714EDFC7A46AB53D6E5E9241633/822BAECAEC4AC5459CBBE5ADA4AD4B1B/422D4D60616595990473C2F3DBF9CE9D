@@ -1,0 +1,136 @@
+﻿using System;
+using System.Configuration;
+using System.Data;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Media;
+using System.IO;
+using System.Reflection;
+
+namespace shopManagementsytem2
+{
+    /// <summary>
+    /// Interaction logic for App.xaml
+    /// </summary>
+    public partial class App : Application
+    {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            
+            // Add application-wide exception handling
+            AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
+            this.DispatcherUnhandledException += App_DispatcherUnhandledException;
+            
+            // Log diagnostic information
+            LogSystemInfo();
+            
+            // Initialize the database with seed data if needed
+            Task.Run(() => {
+                try
+                {
+                    MenuDb.Initialize();
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Database initialization failed: {ex.Message}");
+                }
+            });
+            
+            // Pre-cache the background images to improve performance
+            Task.Run(() => 
+            {
+                try
+                {
+                    // Check if login.jpg exists and log its location
+                    string[] possibleLocations = {
+                        "login.jpg", 
+                        Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "login.jpg"),
+                        Path.Combine(Environment.CurrentDirectory, "login.jpg")
+                    };
+                    
+                    foreach (var location in possibleLocations)
+                    {
+                        if (File.Exists(location))
+                        {
+                            System.Diagnostics.Debug.WriteLine($"Found login.jpg at {location}");
+                        }
+                    }
+                    
+                    // This will preload and cache the images
+                    System.Diagnostics.Debug.WriteLine("Preloading images...");
+                    var loginBrush = ImageHelper.GetBackgroundImage(isLoginScreen: true);
+                    var dashboardBrush = ImageHelper.GetBackgroundImage(isLoginScreen: false);
+                    var profileBrush = ImageHelper.GetProfileImage();
+                    
+                    System.Diagnostics.Debug.WriteLine("Images preloaded successfully");
+                }
+                catch (Exception ex)
+                {
+                    // Log any errors but don't crash the app
+                    System.Diagnostics.Debug.WriteLine($"Error preloading images: {ex.Message}");
+                }
+            });
+        }
+        
+        private void LogSystemInfo()
+        {
+            System.Diagnostics.Debug.WriteLine("--- System Information ---");
+            System.Diagnostics.Debug.WriteLine($"Current Directory: {Environment.CurrentDirectory}");
+            System.Diagnostics.Debug.WriteLine($"Base Directory: {AppDomain.CurrentDomain.BaseDirectory}");
+            System.Diagnostics.Debug.WriteLine($"App Data Path: {Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)}");
+            System.Diagnostics.Debug.WriteLine($".NET Version: {Environment.Version}");
+            
+            try
+            {
+                // Try to list all files in the current directory
+                var files = Directory.GetFiles(Environment.CurrentDirectory);
+                System.Diagnostics.Debug.WriteLine($"Files in current directory ({files.Length}):");
+                foreach (var file in files)
+                {
+                    System.Diagnostics.Debug.WriteLine($"  - {Path.GetFileName(file)}");
+                }
+                
+                // Try to list all files in the app domain base directory
+                var baseFiles = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory);
+                System.Diagnostics.Debug.WriteLine($"Files in base directory ({baseFiles.Length}):");
+                foreach (var file in baseFiles)
+                {
+                    System.Diagnostics.Debug.WriteLine($"  - {Path.GetFileName(file)}");
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error listing files: {ex.Message}");
+            }
+            
+            System.Diagnostics.Debug.WriteLine("-------------------------");
+        }
+        
+        private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+        {
+            Exception ex = e.ExceptionObject as Exception;
+            System.Diagnostics.Debug.WriteLine($"Unhandled exception: {ex?.Message}");
+            System.Diagnostics.Debug.WriteLine($"Stack trace: {ex?.StackTrace}");
+            
+            // Optionally show error to user if this is a critical error
+            if (e.IsTerminating)
+            {
+                MessageBox.Show($"A critical error has occurred: {ex?.Message}\n\nThe application will now close.",
+                    "Critical Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+        
+        private void App_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine($"Dispatcher unhandled exception: {e.Exception.Message}");
+            System.Diagnostics.Debug.WriteLine($"Stack trace: {e.Exception.StackTrace}");
+            
+            // Mark as handled to prevent application crash
+            e.Handled = true;
+            
+            MessageBox.Show($"An error has occurred: {e.Exception.Message}",
+                "Application Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+        }
+    }
+}

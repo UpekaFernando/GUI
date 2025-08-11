@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\User\OneDrive\Desktop\CLONED\GUI\shopManagementsytem2\obj\Debug\net8.0-windows\
+C:\Users\Upeka\Documents\GitHub\GUI\shopManagementsytem2\obj\Debug\net8.0-windows\
 shopManagementsytem2
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\User\OneDrive\Desktop\CLONED\GUI\shopManagementsytem2\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\Upeka\Documents\GitHub\GUI\shopManagementsytem2\App.xaml
 61839199849
 
-231855060200
-217-1971014475
+161914234856
+21878378470
 AddMenu.xaml;AdminWindow.xaml;MainWindow.xaml;ShopkeeperDashboard.xaml;UserDashboard.xaml;ViewMenu.xaml;
 
 False

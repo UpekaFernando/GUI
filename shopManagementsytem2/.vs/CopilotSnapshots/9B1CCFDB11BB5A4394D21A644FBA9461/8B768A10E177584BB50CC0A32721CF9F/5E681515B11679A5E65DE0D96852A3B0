@@ -1,0 +1,302 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.IO; // Use System.IO explicitly
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace shopManagementsytem2
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            
+            // Log the current directory to help with debugging
+            System.Diagnostics.Debug.WriteLine($"Current directory: {Environment.CurrentDirectory}");
+            System.Diagnostics.Debug.WriteLine($"BaseDirectory: {AppDomain.CurrentDomain.BaseDirectory}");
+            
+            // Set background image - try multiple approaches
+            SetBackgroundImage();
+        }
+
+        private void SetBackgroundImage()
+        {
+            try
+            {
+                System.Diagnostics.Debug.WriteLine("Setting background image...");
+                
+                // Try to load from the specific desktop path first
+                string desktopPath = @"C:\Users\Upeka\Desktop\login.jpg";
+                
+                if (System.IO.File.Exists(desktopPath))
+                {
+                    System.Diagnostics.Debug.WriteLine($"Image file found at desktop: {desktopPath}");
+                    try 
+                    {
+                        BitmapImage bitmap = new BitmapImage();
+                        bitmap.BeginInit();
+                        bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                        bitmap.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
+                        
+                        // Use a file stream to load the image to avoid file locking issues
+                        using (var stream = new FileStream(desktopPath, FileMode.Open, FileAccess.Read))
+                        {
+                            bitmap.StreamSource = stream;
+                            bitmap.EndInit();
+                            bitmap.Freeze(); // Make it thread-safe
+                        }
+
+                        // Create and set the brush
+                        ImageBrush brush = new ImageBrush(bitmap);
+                        brush.Stretch = Stretch.UniformToFill;
+                        MainGrid.Background = brush;
+                        
+                        System.Diagnostics.Debug.WriteLine("Successfully loaded login.jpg from desktop");
+                        return;
+                    }
+                    catch (Exception ex)
+                    {
+                        System.Diagnostics.Debug.WriteLine($"Error loading from desktop path: {ex.Message}");
+                        // Fall through to other methods
+                    }
+                }
+                
+                // Check other common paths if desktop path fails
+                string[] imagePaths = {
+                    "login.jpg",
+                    System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "login.jpg"),
+                    System.IO.Path.Combine(Environment.CurrentDirectory, "login.jpg")
+                };
+                
+                foreach (var path in imagePaths)
+                {
+                    if (System.IO.File.Exists(path))
+                    {
+                        System.Diagnostics.Debug.WriteLine($"Image file found at: {path}");
+                    }
+                    else
+                    {
+                        System.Diagnostics.Debug.WriteLine($"Image file not found at: {path}");
+                    }
+                }
+                
+                // Try to use our improved ImageHelper class
+                var imageBrush = ImageHelper.GetBackgroundImage(isLoginScreen: true);
+                
+                if (imageBrush != null)
+                {
+                    System.Diagnostics.Debug.WriteLine("Successfully got background image from ImageHelper");
+                    MainGrid.Background = imageBrush;
+                }
+                else
+                {
+                    System.Diagnostics.Debug.WriteLine("ImageHelper returned null background");
+                    
+                    // Try direct approach as a last resort
+                    try
+                    {
+                        // We'll try a direct embedded resource approach
+                        Uri resourceUri = new Uri("pack://application:,,,/login.jpg", UriKind.Absolute);
+                        BitmapImage bitmap = new BitmapImage(resourceUri);
+                        MainGrid.Background = new ImageBrush(bitmap) { Stretch = Stretch.UniformToFill };
+                        System.Diagnostics.Debug.WriteLine("Successfully loaded login.jpg from resource");
+                    }
+                    catch (Exception resourceEx)
+                    {
+                        System.Diagnostics.Debug.WriteLine($"Resource loading failed: {resourceEx.Message}");
+                        
+                        // Absolute last resort - use a solid color
+                        MainGrid.Background = new SolidColorBrush(Colors.LightSteelBlue);
+                        System.Diagnostics.Debug.WriteLine("Using fallback solid color background");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the error for debugging
+                System.Diagnostics.Debug.WriteLine($"Error in SetBackgroundImage: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
+                
+                // Fallback to solid color
+                MainGrid.Background = new SolidColorBrush(Colors.LightSteelBlue);
+            }
+        }
+
+        private void btnUserLogin_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string email = txtUserEmail.Text;
+                string password = txtUserPassword.Password;
+
+                using (var context = new MenuDb())
+                {
+                    var user = context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+                    if (user != null)
+                    {
+                        MessageBox.Show("User login successful!");
+                        UserDashboard userDashboard = new UserDashboard();
+                        userDashboard.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid email or password.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Login error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                System.Diagnostics.Debug.WriteLine($"Login error: {ex.Message}");
+            }
+        }
+
+        private void btnShopLogin_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string shopName = txtShopName.Text;
+                string emailOrPhone = txtShopEmail.Text;
+                string password = txtShopPassword.Password;
+
+                using (var context = new MenuDb())
+                {
+                    var shopkeeper = context.Shopkeepers.FirstOrDefault(s => s.ShopName == shopName && s.Email == emailOrPhone && s.Password == password);
+                    if (shopkeeper != null)
+                    {
+                        MessageBox.Show("Shopkeeper login successful!");
+                        ShopkeeperDashboard shopkeeperDashboard = new ShopkeeperDashboard(shopName);
+                        shopkeeperDashboard.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid shop name, email/phone, or password.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Shop login error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                System.Diagnostics.Debug.WriteLine($"Shop login error: {ex.Message}");
+            }
+        }
+
+        private void btnAdminLogin_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string username = txtAdminUsername.Text;
+                string password = txtAdminPassword.Password;
+
+                // Admin login logic here
+                if (username == "admin" && password == "admin")
+                {
+                    MessageBox.Show("Admin login successful!");
+                    AdminWindow adminWindow = new AdminWindow();
+                    adminWindow.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Admin login error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                System.Diagnostics.Debug.WriteLine($"Admin login error: {ex.Message}");
+            }
+        }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string name = txtRegName.Text;
+                string emailOrPhone = txtRegEmail.Text;
+                string password = txtRegPassword.Password;
+                string confirmPassword = txtRegConfirmPassword.Password;
+
+                if (password != confirmPassword)
+                {
+                    MessageBox.Show("Passwords do not match.");
+                    return;
+                }
+
+                using (var context = new MenuDb())
+                {
+                    try
+                    {
+                        var user = new User { Name = name, Email = emailOrPhone, Password = password };
+                        context.Users.Add(user);
+                        context.SaveChanges();
+                        MessageBox.Show("User registration successful!");
+                    }
+                    catch (DbUpdateException ex)
+                    {
+                        MessageBox.Show($"An error occurred while saving the entity changes: {ex.InnerException?.Message}");
+                        System.Diagnostics.Debug.WriteLine($"DB Update error: {ex.Message}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Registration error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                System.Diagnostics.Debug.WriteLine($"Registration error: {ex.Message}");
+            }
+        }
+
+        private void btnShopRegister_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string shopName = txtShopRegName.Text;
+                string emailOrPhone = txtShopRegEmail.Text;
+                string password = txtShopRegPassword.Password;
+                string confirmPassword = txtShopRegConfirmPassword.Password;
+
+                if (password != confirmPassword)
+                {
+                    MessageBox.Show("Passwords do not match.");
+                    return;
+                }
+
+                using (var context = new MenuDb())
+                {
+                    try
+                    {
+                        var shopkeeper = new Shopkeeper { ShopName = shopName, Email = emailOrPhone, Password = password };
+                        context.Shopkeepers.Add(shopkeeper);
+                        context.SaveChanges();
+                        MessageBox.Show("Shopkeeper registration successful!");
+                    }
+                    catch (DbUpdateException ex)
+                    {
+                        MessageBox.Show($"An error occurred while saving the entity changes: {ex.InnerException?.Message}");
+                        System.Diagnostics.Debug.WriteLine($"DB Update error: {ex.Message}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Shop registration error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                System.Diagnostics.Debug.WriteLine($"Shop registration error: {ex.Message}");
+            }
+        }
+    }
+}

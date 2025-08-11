@@ -1,0 +1,97 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
+namespace shopManagementsytem2
+{
+    public class MenuDb : DbContext
+    {
+        public DbSet<Menu> Menus { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Shopkeeper> Shopkeepers { get; set; }
+        public DbSet<Order> Orders { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            try
+            {
+                // First attempt to use MySQL
+                optionsBuilder.UseMySql(
+                    "server=localhost;database=shop_management_db;user=root;password=root",
+                    new MySqlServerVersion(new Version(8, 0, 36))
+                );
+            }
+            catch (Exception)
+            {
+                // Fallback to SQLite if MySQL connection fails
+                string dbPath = System.IO.Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    "shopmanagement.db");
+                
+                optionsBuilder.UseSqlite($"Data Source={dbPath}");
+            }
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Menu>()
+                .HasKey(m => new { m.ShopName, m.ProductId });
+
+            modelBuilder.Entity<Order>()
+                .HasKey(o => o.Id);
+            
+            // Add seed data for testing
+            modelBuilder.Entity<User>().HasData(
+                new User { Id = 1, Name = "Test User", Email = "user@test.com", Password = "password" }
+            );
+            
+            modelBuilder.Entity<Shopkeeper>().HasData(
+                new Shopkeeper { Id = 1, ShopName = "Test Shop", Email = "shop@test.com", Password = "password" }
+            );
+            
+            modelBuilder.Entity<Menu>().HasData(
+                new Menu { ProductId = 1, Name = "Burger", Price = 5.99M, Quantity = 10, ShopName = "Test Shop" },
+                new Menu { ProductId = 2, Name = "Pizza", Price = 8.99M, Quantity = 8, ShopName = "Test Shop" }
+            );
+        }
+        
+        // Ensure database is created and has required seed data
+        public static void Initialize()
+        {
+            try
+            {
+                using (var context = new MenuDb())
+                {
+                    // This will create the database if it doesn't exist
+                    context.Database.EnsureCreated();
+                    
+                    // If there are no users, add the seed data
+                    if (!context.Users.Any())
+                    {
+                        context.Users.Add(new User { Name = "Test User", Email = "user@test.com", Password = "password" });
+                        context.Shopkeepers.Add(new Shopkeeper { ShopName = "Test Shop", Email = "shop@test.com", Password = "password" });
+                        context.Menus.Add(new Menu { ProductId = 1, Name = "Burger", Price = 5.99M, Quantity = 10, ShopName = "Test Shop" });
+                        context.Menus.Add(new Menu { ProductId = 2, Name = "Pizza", Price = 8.99M, Quantity = 8, ShopName = "Test Shop" });
+                        context.SaveChanges();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the error or display a message
+                System.Diagnostics.Debug.WriteLine($"Database initialization error: {ex.Message}");
+            }
+        }
+    }
+
+    public class Order
+    {
+        public int Id { get; set; }
+        public string ShopName { get; set; }
+        public string MenuName { get; set; }
+        public DateTime OrderDate { get; set; }
+    }
+}
