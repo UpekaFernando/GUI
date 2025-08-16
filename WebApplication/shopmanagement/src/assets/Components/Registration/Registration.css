@@ -136,6 +136,24 @@ a:hover {
   color: #0056b3;
 }
 
+/* Error message styling */
+.error-message {
+  color: #d32f2f;
+  background-color: #fdecea;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+  border-left: 4px solid #d32f2f;
+}
+
+/* Disabled button styling */
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

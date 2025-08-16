@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:menudb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\upeka\\documents\\github\\gui\\shopmanagementsytem2\\migrations\\menudbmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:migrations\\menudbmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\upeka\\documents\\github\\gui\\shopmanagementsytem2\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\upeka\\documents\\github\\gui\\shopmanagementsytem2\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\upeka\\documents\\github\\gui\\shopmanagementsytem2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:viewmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\upeka\\documents\\github\\gui\\shopmanagementsytem2\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|c:\\users\\upeka\\documents\\github\\gui\\shopmanagementsytem2\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E38641F9-B02C-4046-BB5F-AE293F760229}|shopManagementsytem2.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -82,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -107,6 +111,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MenuDbModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\Migrations\\MenuDbModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\MenuDbModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\Migrations\\MenuDbModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\MenuDbModelSnapshot.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T18:15:51.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
@@ -119,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "UserDashboard.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\UserDashboard.xaml.cs",
               "RelativeDocumentMoniker": "UserDashboard.xaml.cs",
@@ -127,8 +144,7 @@
               "RelativeToolTip": "UserDashboard.xaml.cs",
               "ViewState": "AgIAAJcAAAAAAAAAAAAnwOgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T13:07:53.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T13:07:53.113Z"
             },
             {
               "$type": "Document",
@@ -138,14 +154,14 @@
               "RelativeDocumentMoniker": "MenuDb.cs",
               "ToolTip": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\MenuDb.cs",
               "RelativeToolTip": "MenuDb.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBgAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAIA2wBYAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T13:27:49.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ImageHelper.cs",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\ImageHelper.cs",
               "RelativeDocumentMoniker": "ImageHelper.cs",
@@ -153,12 +169,11 @@
               "RelativeToolTip": "ImageHelper.cs",
               "ViewState": "AgIAAE4BAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T06:58:35.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-11T06:58:35.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
@@ -171,18 +186,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\Menu.cs",
+              "RelativeDocumentMoniker": "Menu.cs",
+              "ToolTip": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\Menu.cs",
+              "RelativeToolTip": "Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:27:38.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-04T13:27:16.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T13:27:16.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -190,12 +217,11 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAACABAAAAAAAAAAD4vxgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T13:27:23.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T13:27:23.984Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ViewMenu.xaml",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\ViewMenu.xaml",
               "RelativeDocumentMoniker": "ViewMenu.xaml",
@@ -206,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "AddMenu.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\AddMenu.xaml.cs",
               "RelativeDocumentMoniker": "AddMenu.xaml.cs",
@@ -218,19 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\Menu.cs",
-              "RelativeDocumentMoniker": "Menu.cs",
-              "ToolTip": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\Menu.cs",
-              "RelativeToolTip": "Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T13:27:38.382Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ShopkeeperDashboard.xaml",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\ShopkeeperDashboard.xaml",
               "RelativeDocumentMoniker": "ShopkeeperDashboard.xaml",
@@ -241,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ShopkeeperDashboard.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\ShopkeeperDashboard.xaml.cs",
               "RelativeDocumentMoniker": "ShopkeeperDashboard.xaml.cs",
@@ -253,18 +267,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UserDashboard.xaml",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\UserDashboard.xaml",
               "RelativeDocumentMoniker": "UserDashboard.xaml",
               "ToolTip": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\UserDashboard.xaml",
               "RelativeToolTip": "UserDashboard.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-04T13:06:37.203Z"
+              "WhenOpened": "2025-05-04T13:06:37.203Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ViewMenu.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\ViewMenu.xaml.cs",
               "RelativeDocumentMoniker": "ViewMenu.xaml.cs",
@@ -276,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -288,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "AdminWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\AdminWindow.xaml.cs",
               "RelativeDocumentMoniker": "AdminWindow.xaml.cs",
@@ -300,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "AdminWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\AdminWindow.xaml",
               "RelativeDocumentMoniker": "AdminWindow.xaml",
@@ -311,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AddMenu.xaml",
               "DocumentMoniker": "C:\\Users\\Upeka\\Documents\\GitHub\\GUI\\shopManagementsytem2\\AddMenu.xaml",
               "RelativeDocumentMoniker": "AddMenu.xaml",

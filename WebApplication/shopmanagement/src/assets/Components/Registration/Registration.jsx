@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { registerUser } from '../../../api';
 import './Registration.css';
 
 export default function Register() {
@@ -8,27 +9,41 @@ export default function Register() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [role, setRole] = useState("user");
   const [shopName, setShopName] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
+    setErrorMessage("");
+    
     if (password !== confirmPassword) {
-      alert("Passwords do not match");
+      setErrorMessage("Passwords do not match");
+      setIsLoading(false);
       return;
     }
 
     const data = role === "user" ? { email, password } : { email, password, shopName };
     
     try {
-      const response = await fetch(`http://localhost:3001/register/${role}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      const result = await response.json();
+      console.log('Sending registration request for:', role, data);
+      const result = await registerUser(data, role);
+      
+      if (!result || result.message.includes('failed')) {
+        throw new Error(`Registration failed: ${result?.message || 'Unknown error'}`);
+      }
+      
+      console.log('Registration successful:', result);
       alert(result.message);
     } catch (error) {
-      alert("Registration failed");
+      console.error('Registration error details:', error);
+      if (error.message.includes('Failed to fetch') || error.message.includes('NetworkError')) {
+        setErrorMessage("Cannot connect to the server. Please ensure the backend service is running on port 3001.");
+      } else {
+        setErrorMessage("Registration failed: " + (error.message || "Unknown error"));
+      }
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -37,6 +52,8 @@ export default function Register() {
       <div className="auth-header">Food Management</div>
       <div className={`registration-container ${role === 'user' ? 'user-mode' : 'shopkeeper-mode'}`}>
         <h2>Register</h2>
+        {errorMessage && <div className="error-message">{errorMessage}</div>}
+        
         <div className="role-selection">
           <button 
             className={`role-btn ${role === 'user' ? 'active' : ''}`}
@@ -91,7 +108,9 @@ export default function Register() {
               required 
             />
           </div>
-          <button type="submit">Register</button>
+          <button type="submit" disabled={isLoading}>
+            {isLoading ? 'Registering...' : 'Register'}
+          </button>
         </form>
 
         <p>

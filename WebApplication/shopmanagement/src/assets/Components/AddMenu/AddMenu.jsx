@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { addMenuItem } from '../../../api';
 import './AddMenu.css';
 
 function AddMenu() {
@@ -31,18 +32,10 @@ function AddMenu() {
     console.log('Sending menu data:', menuData); // Debug log
   
     try {
-      const response = await fetch('http://localhost:3001/add-menu', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(menuData),
-      });
-  
-      const result = await response.json();
+      const result = await addMenuItem(menuData);
       console.log('Server response:', result); // Debug log
   
-      if (response.ok) {
+      if (result && !result.message?.includes('Failed')) {
         alert('Menu item added successfully');
         navigate('/dashboard');
       } else {

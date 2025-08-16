@@ -1,52 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { loginUser } from '../../../api';
 import './Login.css';
+import './error-styles.css';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [shopName, setShopName] = useState('');
   const [role, setRole] = useState('user'); // Default role is user
+  const [error, setError] = useState(''); // Error state
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(''); // Clear previous errors
+    
     const data = { email, password };
-    const endpoint = role === 'user' ? '/login/user' : '/login/shopkeeper';
-  
+    
     try {
-      const response = await fetch(`http://localhost:3001${endpoint}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-  
-      const result = await response.json();
-      if (response.ok) {
-        // Add console log to verify the user ID
-        console.log('Login response:', result);
-        
-        // Store user ID in localStorage
-        localStorage.setItem('userId', result.userId.toString()); // Convert to string
-        localStorage.setItem('userRole', role);
-        
-        // Verify stored values
-        console.log('Stored userId:', localStorage.getItem('userId'));
-        console.log('Stored userRole:', localStorage.getItem('userRole'));
-        
-        if (role === 'user') {
-          navigate('/user-dashboard');
-        } else {
-          navigate('/dashboard');
-        }
+      const result = await loginUser(data, role);
+      
+      if (!result.userId) {
+        throw new Error(`Login failed: Please check your email and password`);
+      }
+      
+      // Store user ID in localStorage
+      localStorage.setItem('userId', result.userId.toString());
+      localStorage.setItem('userRole', role);
+      localStorage.setItem('userEmail', email);
+      
+      if (role === 'shopkeeper') {
+        localStorage.setItem('shopName', shopName);
+      }
+      
+      if (role === 'user') {
+        navigate('/user-dashboard');
       } else {
-        alert('Login failed: ' + result.message);
+        navigate('/dashboard');
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('Login failed');
+      console.error('Login error details:', error);
+      setError(error.message || 'Login failed: Unknown error');
     }
   };
 
@@ -89,6 +84,7 @@ function Login() {
               required
             />
           </div>
+          {error && <div className="error-message">{error}</div>} {/* Display error message */}
           <button type="submit">Login</button>
         </form>
         <p>

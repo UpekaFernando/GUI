@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { fetchMenuItems, fetchShops } from '../../../api';
 import './ViewMenu.css';
 
 function ViewMenu() {
@@ -21,14 +22,12 @@ function ViewMenu() {
           return;
         }
         console.log('Fetching menu items for shopkeeper:', userId); // Debug log
-        const response = await fetch(`http://localhost:3001/menu/${userId}?role=${userRole}&userId=${userId}`);
-        const data = await response.json();
+        const data = await fetchMenuItems(userId);
         console.log('Fetched menu items:', data); // Debug log
         setMenus(data);
       } else {
         // If customer, fetch shops first
-        const shopsResponse = await fetch('http://localhost:3001/shops');
-        const shopsData = await response.json();
+        const shopsData = await fetchShops();
         setShops(shopsData);
         setMenus([]); // Clear menus until shop is selected
       }
@@ -41,8 +40,7 @@ function ViewMenu() {
     if (!shopId) return;
     
     try {
-      const response = await fetch(`http://localhost:3001/menu/${shopId}?role=${userRole}&userId=${userId}`);
-      const data = await response.json();
+      const data = await fetchMenuItems(shopId);
       setMenus(data);
     } catch (error) {
       console.error('Error fetching shop menu:', error);
